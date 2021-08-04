@@ -27,6 +27,8 @@ Les fichiers STL nécessaires sont disponibles dans le dossier "_STL" [ici](http
 
 ## Schema de câblage :
 
+![FLSUN SuperRacer SKR2](https://user-images.githubusercontent.com/12702322/128229118-0e99d567-2a6f-4fc2-8bfe-600c4e845f50.png)
+
 ## Principales fonctionnalités configurées :
 
 - Support carte mère BigTreeTech SKR 2.0 Rev B
