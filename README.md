@@ -19,8 +19,9 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 
 Le firmware pour écran BigTreeTech TFT70 3.0 est disponible [ici](https://github.com/Guilouz/BTT-TFT70-SuperRacer).
 
+<br />
 
-Les fichiers STL nécessaires sont disponibles dans le dossier "_STL" [ici](hhttps://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX/tree/main/_STL).
+Les fichiers STL nécessaires sont disponibles dans le dossier "_STL" [ici](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX/tree/main/_STL).
 
 <br />
 
