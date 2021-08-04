@@ -34,9 +34,9 @@ Les fichiers STL nécessaires sont disponibles dans le dossier "_STL" [ici](http
 - Support carte mère BigTreeTech SKR 2.0 Rev B
 - Support extrudeur Bondtech LGX
   - Si extrudeur stock, définissez ces valeurs :
-  - Dans Configuration.h : #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }
-  - Dans Configuration.h : #define INVERT_E0_DIR
-  - Dans Configuration_adv.h : #define E0_CURRENT      950
+  - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
+  - Dans Configuration.h : `#define INVERT_E0_DIR`
+  - Dans Configuration_adv.h : `#define E0_CURRENT      950`
 - Support drivers TMC2209/TMC2226 UART
 - Support écrans BigTreeTech
 - Support Bed Leveling Bilinear 9 x 9 points
