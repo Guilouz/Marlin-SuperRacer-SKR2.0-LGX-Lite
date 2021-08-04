@@ -43,7 +43,7 @@ Les fichiers STL nécessaires sont disponibles dans le dossier "_STL" [ici](http
 - Support M600 & Nozzle Park / Advanced Pause
 - Support Babystepping
 - Support du contrôle du ventilateur de la carte mère
-- Support Neopixels (j'utilise cet anneau de LED : https://fr.aliexpress.com/item/1005002090765807.html?spm=a2g0s.9042311.0.0.56d46c37lqhfaf)
+- Support Neopixels (j'utilise cet anneau de LED : [ici](https://fr.aliexpress.com/item/1005002090765807.html?spm=a2g0s.9042311.0.0.56d46c37lqhfaf))
 - Support EEPROM
 - Support PID Buse & Plateau
 - Support protection thermique contre l'emballement
