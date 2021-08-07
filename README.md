@@ -89,7 +89,7 @@ Ce firmware est configuré poour une carte mère BigTreeTech SKR 2.0 rev B et ex
     - Dans Configuration_adv.h : `//#define LED_CONTROL_MENU`
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
-    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT'
+    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
   - Si `SKR 1.4`, définissez ces valeurs :
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_4`
@@ -99,7 +99,7 @@ Ce firmware est configuré poour une carte mère BigTreeTech SKR 2.0 rev B et ex
     - Dans Configuration_adv.h : `//#define LED_CONTROL_MENU`
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
-    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT'
+    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
   - Si `SKR 1.4 Turbo`, définissez ces valeurs :
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO`
@@ -107,7 +107,7 @@ Ce firmware est configuré poour une carte mère BigTreeTech SKR 2.0 rev B et ex
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
-    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT'
+    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
   
 Recompilez ensuite le firmware à l'aide de VSCode et PlatformIO (voir [ici](https://marlinfw.org/docs/basics/install_platformio_vscode.html)).
 
