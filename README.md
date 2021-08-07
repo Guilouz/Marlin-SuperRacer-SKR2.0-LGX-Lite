@@ -1,6 +1,6 @@
 ## ATTENTION
 
-Lire attentivement ceci pour [SKR 2.0 Rev A et Rev B](https://docs.google.com/document/d/1IeKgfE2WIDjqH1fx5Yg7n1FOHVwhDFmDlZ-7QMlOEV0/edit?fbclid=IwAR3gCoyRlxSNaZfyHNV_BgGn1apJKmvagmzduOfGGYjY7I8kDBUVAuLyIi4).
+Lire attentivement ceci pour [SKR 2.0 Rev. A et Rev. B](https://docs.google.com/document/d/1IeKgfE2WIDjqH1fx5Yg7n1FOHVwhDFmDlZ-7QMlOEV0/edit?fbclid=IwAR3gCoyRlxSNaZfyHNV_BgGn1apJKmvagmzduOfGGYjY7I8kDBUVAuLyIi4).
 
 <br />
 
@@ -17,7 +17,7 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 
 <br /><br /><br /><br /><br /><br /><br /><br />
 
-**Firmware Marlin 2.0.9.1 bugfix configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0 Rev B.**
+**Firmware Marlin 2.0.9.1 bugfix configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0 Rev. B.**
 
 Le firmware pour écran BigTreeTech TFT70 3.0 est disponible [ici](https://github.com/Guilouz/BTT-TFT70-SuperRacer).
 
@@ -72,7 +72,7 @@ Les fichiers STL nécessaires sont disponibles dans le dossier `_STL` [ici](http
 
 ## Changements éventuels :
 
-Ce firmware est configuré poour une carte mère BigTreeTech SKR 2.0 rev B et extrudeur Bondtech LGX. Certains changements peuvent être effectuer si vous disposez d'autres équipements.
+Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 rev B et extrudeur Bondtech LGX. Certains changements peuvent être effectuer si vous disposez d'autres équipements.
 
   - Pour changer la langue de Marlin en anglais, définissez ces valeurs :
     - Dans Configuration.h : `#define LCD_LANGUAGE en`
@@ -110,5 +110,8 @@ Ce firmware est configuré poour une carte mère BigTreeTech SKR 2.0 rev B et ex
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
+    
+  - Si `SKR 2.0 Rev. A`, définissez ces valeurs :
+    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT` en vous assurant d'avoir vérifier ceci : [SKR 2.0 Rev. A et Rev. B](https://docs.google.com/document/d/1IeKgfE2WIDjqH1fx5Yg7n1FOHVwhDFmDlZ-7QMlOEV0/edit?fbclid=IwAR3gCoyRlxSNaZfyHNV_BgGn1apJKmvagmzduOfGGYjY7I8kDBUVAuLyIi4).
   
 Recompilez ensuite le firmware à l'aide de VSCode et PlatformIO (voir [ici](https://marlinfw.org/docs/basics/install_platformio_vscode.html)).
