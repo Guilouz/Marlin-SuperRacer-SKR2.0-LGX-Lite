@@ -38,7 +38,6 @@ Les fichiers STL nécessaires sont disponibles dans le dossier "_STL" [ici](http
 - Support Bed Leveling Bilinear 9 x 9 points
 - Support M600 & Nozzle Park / Advanced Pause
 - Support Babystepping
-- Support du contrôle du ventilateur de la carte mère
 - Support Neopixels (j'utilise cet anneau de LED : [ici](https://fr.aliexpress.com/item/1005002090765807.html?spm=a2g0s.9042311.0.0.56d46c37lqhfaf))
 - Support EEPROM
 - Support PID Buse & Plateau
@@ -49,7 +48,7 @@ Les fichiers STL nécessaires sont disponibles dans le dossier "_STL" [ici](http
 - Support G33 - Delta Auto Calibration
 - Support du transfert de fichier binaire (transfert du fichier firmware à distance via Octoprint)
 - Support de l'extinction de la chauffe après 15 minutes d'inactivité de la hotend
-- support des commandes d'action de l'hôte
+- Support des commandes d'action de l'hôte
 - Activation du ventilateur de la hotend uniquement quand la chauffe dépasse 50°C
 - Prise en charge de plusieurs volumes (microSD & USB)
 - Prise en charge du partage multimédia USB
@@ -73,10 +72,42 @@ Les fichiers STL nécessaires sont disponibles dans le dossier "_STL" [ici](http
 
 Ce firmware est configuré poour une carte mère BigTreeTech SKR 2.0 rev B et extrudeur Bondtech LGX. Certains changements peuvent être effectuer si vous disposez d'autres équipements.
 
+  - Pour changer la langue de Marlin, définissez ces valeurs :
+    - Dans Configuration.h : `#define LCD_LANGUAGE en`
+
   - Si `EXTRUDEUR STOCK`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR`
     - Dans Configuration_adv.h : `#define E0_CURRENT      950`
+    
+  - Si `SKR 1.3`, définissez ces valeurs :
+    - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_3`
+    - Dans Configuration.h : `#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN`
+    - Dans Configuration.h : `//#define Z_MIN_PROBE_PIN PA0`
+    - Dans Configuration.h : `//#define NEOPIXEL_LED`
+    - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
+    - Dans Configuration_adv.h : `//#define LED_CONTROL_MENU`
+    - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
+    - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
+    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT'
+    
+  - Si `SKR 1.4`, définissez ces valeurs :
+    - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_4`
+    - Dans Configuration.h : `#define Z_MIN_PROBE_PIN P1_25` Le palpeur doit être branché sur le port E1DET
+    - Dans Configuration.h : `//#define NEOPIXEL_LED`
+    - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
+    - Dans Configuration_adv.h : `//#define LED_CONTROL_MENU`
+    - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
+    - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
+    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT'
+    
+  - Si `SKR 1.4 Turbo`, définissez ces valeurs :
+    - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO`
+    - Dans Configuration.h : `#define Z_MIN_PROBE_PIN P1_25` Le palpeur doit être branché sur le port E1DET
+    - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
+    - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
+    - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
+    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT'
   
 Recompilez ensuite le firmware à l'aide de VSCode et PlatformIO (voir [ici](https://marlinfw.org/docs/basics/install_platformio_vscode.html)).
 
