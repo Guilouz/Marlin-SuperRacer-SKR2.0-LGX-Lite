@@ -72,7 +72,7 @@ Les fichiers STL nécessaires sont disponibles dans le dossier "_STL" [ici](http
 
 Ce firmware est configuré poour une carte mère BigTreeTech SKR 2.0 rev B et extrudeur Bondtech LGX. Certains changements peuvent être effectuer si vous disposez d'autres équipements.
 
-  - Pour changer la langue de Marlin, définissez ces valeurs :
+  - Pour changer la langue de Marlin en anglais, définissez ces valeurs :
     - Dans Configuration.h : `#define LCD_LANGUAGE en`
 
   - Si `EXTRUDEUR STOCK`, définissez ces valeurs :
