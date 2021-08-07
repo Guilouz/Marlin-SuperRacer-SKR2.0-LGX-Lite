@@ -33,7 +33,7 @@ Les fichiers STL nécessaires sont disponibles dans le dossier `_STL` [ici](http
 
 ## Principales fonctionnalités configurées :
 
-- Support carte mère BigTreeTech SKR 2.0 Rev B
+- Support carte mère BigTreeTech SKR 2.0 Rev. B
 - Support extrudeur Bondtech LGX
 - Support drivers TMC2209/TMC2226 UART
 - Support écrans BigTreeTech
