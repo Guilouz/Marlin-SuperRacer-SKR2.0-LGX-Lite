@@ -67,7 +67,7 @@ Lire attentivement ceci pour [SKR 2.0 Rev. A et Rev. B](https://docs.google.com/
 
 ## Changements éventuels :
 
-Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 rev B et extrudeur Bondtech LGX. Certains changements peuvent être effectuer si vous disposez d'autres équipements.
+Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et extrudeur Bondtech LGX. Certains changements peuvent être effectués si vous disposez d'autres équipements.
 
   - Pour changer la langue de Marlin en anglais, définissez ces valeurs :
     - Dans Configuration.h : `#define LCD_LANGUAGE en`
