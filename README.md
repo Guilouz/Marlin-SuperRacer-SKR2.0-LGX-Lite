@@ -76,9 +76,24 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR`
     - Dans Configuration_adv.h : `#define E0_CURRENT      950`
+
+  - Si `MKS OBIN NANO V3`, définissez ces valeurs :
+    - Dans Configuration.h : `#define MOTHERBOARD BOARD_MKS_ROBIN_NANO_V3`
+    - Dans Configuration.h : `#define SERIAL_PORT -1`
+    - Dans Configuration.h : `#define SERIAL_PORT_2 3'
+    - Dans Configuration.h : `#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN`
+    - Dans Configuration.h : `//#define Z_MIN_PROBE_PIN PA0`
+    - Dans Configuration.h : `//#define NEOPIXEL_LED`
+    - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN PB0`
+    - Dans Configuration_adv.h : `//#define LED_CONTROL_MENU`
+    - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
+    - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
+    - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
   - Si `SKR 1.3`, définissez ces valeurs :
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_3`
+    - Dans Configuration.h : `#define SERIAL_PORT -1`
+    - Dans Configuration.h : `#define SERIAL_PORT_2 0'
     - Dans Configuration.h : `#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN`
     - Dans Configuration.h : `//#define Z_MIN_PROBE_PIN PA0`
     - Dans Configuration.h : `//#define NEOPIXEL_LED`
@@ -90,6 +105,8 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
     
   - Si `SKR 1.4`, définissez ces valeurs :
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_4`
+    - Dans Configuration.h : `#define SERIAL_PORT -1`
+    - Dans Configuration.h : `#define SERIAL_PORT_2 0'
     - Dans Configuration.h : `#define Z_MIN_PROBE_PIN P1_25` Le palpeur doit être branché sur le port E1DET
     - Dans Configuration.h : `//#define NEOPIXEL_LED`
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
@@ -100,6 +117,8 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
     
   - Si `SKR 1.4 Turbo`, définissez ces valeurs :
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO`
+    - Dans Configuration.h : `#define SERIAL_PORT -1`
+    - Dans Configuration.h : `#define SERIAL_PORT_2 0'
     - Dans Configuration.h : `#define Z_MIN_PROBE_PIN P1_25` Le palpeur doit être branché sur le port E1DET
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
