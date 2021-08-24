@@ -77,7 +77,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
     - Dans Configuration.h : `#define INVERT_E0_DIR`
     - Dans Configuration_adv.h : `#define E0_CURRENT      950`
 
-  - Si `MKS OBIN NANO V3`, définissez ces valeurs :
+  - Si `MKS ROBIN NANO V3`, définissez ces valeurs :
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_MKS_ROBIN_NANO_V3`
     - Dans Configuration.h : `#define SERIAL_PORT -1`
     - Dans Configuration.h : `#define SERIAL_PORT_2 3'
