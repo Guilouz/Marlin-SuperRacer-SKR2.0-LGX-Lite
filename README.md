@@ -87,7 +87,8 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
     - Dans Configuration.h : `//#define NEOPIXEL_LED`
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN PB0`
     - Dans Configuration_adv.h : `//#define LED_CONTROL_MENU`
-    - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
+    - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT` pour utiliser le port microSD
+    - Dans Configuration_adv.h : `#define USB_FLASH_DRIVE_SUPPORT` pour utiliser le port USB
     - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
