@@ -78,6 +78,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
     - Dans Configuration_adv.h : `#define E0_CURRENT      950`
 
   - Si `MKS ROBIN NANO V3`, définissez ces valeurs :
+    - Dans platformio.ini : `default_envs = mks_robin_nano_v3_usb_flash_drive_msc`
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_MKS_ROBIN_NANO_V3`
     - Dans Configuration.h : `#define SERIAL_PORT -1`
     - Dans Configuration.h : `#define SERIAL_PORT_2 3`
@@ -91,6 +92,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
   - Si `SKR 1.3`, définissez ces valeurs :
+    - Dans platformio.ini : `default_envs = LPC1768`
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_3`
     - Dans Configuration.h : `#define SERIAL_PORT -1`
     - Dans Configuration.h : `#define SERIAL_PORT_2 0`
@@ -104,6 +106,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
   - Si `SKR 1.4`, définissez ces valeurs :
+    - Dans platformio.ini : `default_envs = LPC1768`
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_4`
     - Dans Configuration.h : `#define SERIAL_PORT -1`
     - Dans Configuration.h : `#define SERIAL_PORT_2 0`
@@ -116,6 +119,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
   - Si `SKR 1.4 Turbo`, définissez ces valeurs :
+    - Dans platformio.ini : `default_envs = LPC1769`
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO`
     - Dans Configuration.h : `#define SERIAL_PORT -1`
     - Dans Configuration.h : `#define SERIAL_PORT_2 0`
