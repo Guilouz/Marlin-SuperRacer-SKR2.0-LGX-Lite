@@ -66,6 +66,7 @@ namespace Language_fr {
   PROGMEM Language_Str MSG_DISABLE_STEPPERS                = _UxGT("Arrêter moteurs");
   PROGMEM Language_Str MSG_DEBUG_MENU                      = _UxGT("Menu debug");
   PROGMEM Language_Str MSG_PROGRESS_BAR_TEST               = _UxGT("Test barre progress.");
+  PROGMEM Language_Str MSG_HOMING                          = _UxGT("Home");
   PROGMEM Language_Str MSG_AUTO_HOME                       = _UxGT("Home auto");
   PROGMEM Language_Str MSG_AUTO_HOME_X                     = _UxGT("Home X auto");
   PROGMEM Language_Str MSG_AUTO_HOME_Y                     = _UxGT("Home Y auto");
@@ -145,7 +146,7 @@ namespace Language_fr {
   PROGMEM Language_Str MSG_MESH_EDITOR                     = _UxGT("Editeur Mesh");
   PROGMEM Language_Str MSG_EDIT_MESH                       = _UxGT("Editer Mesh");
   PROGMEM Language_Str MSG_EDITING_STOPPED                 = _UxGT("Modification arrêtée");
-  PROGMEM Language_Str MSG_PROBING_MESH                    = _UxGT("Mesure point");
+  PROGMEM Language_Str MSG_PROBING_POINT                   = _UxGT("Mesure point");
   PROGMEM Language_Str MSG_MESH_X                          = _UxGT("Index X");
   PROGMEM Language_Str MSG_MESH_Y                          = _UxGT("Index Y");
   PROGMEM Language_Str MSG_MESH_EDIT_Z                     = _UxGT("Valeur Z");
@@ -316,6 +317,7 @@ namespace Language_fr {
   PROGMEM Language_Str MSG_LCD_OFF                         = _UxGT("Arrêt");
   PROGMEM Language_Str MSG_PID_AUTOTUNE                    = _UxGT("PID Autotune");
   PROGMEM Language_Str MSG_PID_AUTOTUNE_E                  = _UxGT("PID Autotune *");
+  PROGMEM Language_Str MSG_PID_CYCLE                       = _UxGT("Cycle PID");
   PROGMEM Language_Str MSG_PID_AUTOTUNE_DONE               = _UxGT("Tuning PID terminé");
   PROGMEM Language_Str MSG_PID_BAD_EXTRUDER_NUM            = _UxGT("Echec Autotune! E incorrect");
   PROGMEM Language_Str MSG_PID_TEMP_TOO_HIGH               = _UxGT("Echec Autotune! Temp. trop haute");
@@ -586,12 +588,12 @@ namespace Language_fr {
   PROGMEM Language_Str MSG_INFO_MAX_TEMP                   = _UxGT("Temp Max");
   PROGMEM Language_Str MSG_INFO_PSU                        = _UxGT("Alim.");
   PROGMEM Language_Str MSG_DRIVE_STRENGTH                  = _UxGT("Puiss. moteur ");
-  PROGMEM Language_Str MSG_DAC_PERCENT_X                   = _UxGT("X Driver %");
-  PROGMEM Language_Str MSG_DAC_PERCENT_Y                   = _UxGT("Y Driver %");
-  PROGMEM Language_Str MSG_DAC_PERCENT_Z                   = _UxGT("Z Driver %");
-  PROGMEM Language_Str MSG_DAC_PERCENT_I                   = AXIS4_STR _UxGT(" Driver %");
-  PROGMEM Language_Str MSG_DAC_PERCENT_J                   = AXIS5_STR _UxGT(" Driver %");
-  PROGMEM Language_Str MSG_DAC_PERCENT_K                   = AXIS6_STR _UxGT(" Driver %");
+  PROGMEM Language_Str MSG_DAC_PERCENT_A                   = LCD_STR_A _UxGT(" Driver %");
+  PROGMEM Language_Str MSG_DAC_PERCENT_B                   = LCD_STR_B _UxGT(" Driver %");
+  PROGMEM Language_Str MSG_DAC_PERCENT_C                   = LCD_STR_C _UxGT(" Driver %");
+  PROGMEM Language_Str MSG_DAC_PERCENT_I                   = LCD_STR_I _UxGT(" Driver %");
+  PROGMEM Language_Str MSG_DAC_PERCENT_J                   = LCD_STR_J _UxGT(" Driver %");
+  PROGMEM Language_Str MSG_DAC_PERCENT_K                   = LCD_STR_K _UxGT(" Driver %");
   PROGMEM Language_Str MSG_DAC_PERCENT_E                   = _UxGT("E Driver %");
   PROGMEM Language_Str MSG_ERROR_TMC                       = _UxGT("ERREUR CONNEXION TMC");
   PROGMEM Language_Str MSG_DAC_EEPROM_WRITE                = _UxGT("DAC EEPROM sauv.");

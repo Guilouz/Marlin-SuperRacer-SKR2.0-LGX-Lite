@@ -202,6 +202,10 @@ constexpr uint8_t epps = ENCODER_PULSES_PER_STEP;
     bool MarlinUI::drawing_screen, MarlinUI::first_page; // = false
   #endif
 
+  #if IS_DWIN_MARLINUI
+    bool MarlinUI::did_first_redraw;
+  #endif
+
   // Encoder Handling
   #if HAS_ENCODER_ACTION
     uint32_t MarlinUI::encoderPosition;
@@ -335,6 +339,7 @@ constexpr uint8_t epps = ENCODER_PULSES_PER_STEP;
           col = (LCD_WIDTH - plen - slen) / 2;
           row = LCD_HEIGHT > 3 ? 1 : 0;
         }
+        if (LCD_HEIGHT >= 8) row = LCD_HEIGHT / 2 - 2;
         wrap_string_P(col, row, pref, true);
         if (string) {
           if (col) { col = 0; row++; } // Move to the start of the next line
@@ -1073,6 +1078,9 @@ constexpr uint8_t epps = ENCODER_PULSES_PER_STEP;
 
           run_current_screen();
 
+          // Apply all DWIN drawing after processing
+          TERN_(IS_DWIN_MARLINUI, DWIN_UpdateLCD());
+
         #endif
 
         TERN_(HAS_LCD_MENU, lcd_clicked = false);
@@ -1436,7 +1444,7 @@ constexpr uint8_t epps = ENCODER_PULSES_PER_STEP;
         UNUSED(persist);
       #endif
 
-      #if ENABLED(LCD_PROGRESS_BAR) || BOTH(FILAMENT_LCD_DISPLAY, SDSUPPORT)
+      #if BASIC_PROGRESS_BAR || BOTH(FILAMENT_LCD_DISPLAY, SDSUPPORT)
         const millis_t ms = millis();
       #endif
 
