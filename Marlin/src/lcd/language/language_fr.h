@@ -74,6 +74,14 @@ namespace Language_fr {
   PROGMEM Language_Str MSG_AUTO_HOME_I                     = _UxGT("Home ") LCD_STR_I;
   PROGMEM Language_Str MSG_AUTO_HOME_J                     = _UxGT("Home ") LCD_STR_J;
   PROGMEM Language_Str MSG_AUTO_HOME_K                     = _UxGT("Home ") LCD_STR_K;
+  PROGMEM Language_Str MSG_FILAMENT_SET                    = _UxGT("Réglages Filament");
+  PROGMEM Language_Str MSG_FILAMENT_MAN                    = _UxGT("Gestion Filament");
+  PROGMEM Language_Str MSG_LEVBED_FL                       = _UxGT("Avant Gauche");
+  PROGMEM Language_Str MSG_LEVBED_FR                       = _UxGT("Avant Droit");
+  PROGMEM Language_Str MSG_LEVBED_C                        = _UxGT("Centre");
+  PROGMEM Language_Str MSG_LEVBED_BL                       = _UxGT("Arrière Gauche");
+  PROGMEM Language_Str MSG_LEVBED_BR                       = _UxGT("Arrière Droit");
+  PROGMEM Language_Str MSG_MANUAL_MESH                     = _UxGT("Mesh Manuel");
   PROGMEM Language_Str MSG_AUTO_Z_ALIGN                    = _UxGT("Z-Align");
   PROGMEM Language_Str MSG_ITERATION                       = _UxGT("Itération G34: %i");
   PROGMEM Language_Str MSG_DECREASING_ACCURACY             = _UxGT("Précision décroissante!");
@@ -285,6 +293,11 @@ namespace Language_fr {
   PROGMEM Language_Str MSG_MOVE_01IN                       = _UxGT("Déplacer 0.1in");
   PROGMEM Language_Str MSG_MOVE_1IN                        = _UxGT("Déplacer 1.0in");
   PROGMEM Language_Str MSG_SPEED                           = _UxGT("Vitesse");
+  PROGMEM Language_Str MSG_MAXSPEED                        = _UxGT("Vitesse Max (mm/s)");
+  PROGMEM Language_Str MSG_MAXSPEED_X                      = _UxGT("Max ") LCD_STR_A _UxGT(" Vitesse");
+  PROGMEM Language_Str MSG_MAXSPEED_Y                      = _UxGT("Max ") LCD_STR_B _UxGT(" Vitesse");
+  PROGMEM Language_Str MSG_MAXSPEED_Z                      = _UxGT("Max ") LCD_STR_C _UxGT(" Vitesse");
+  PROGMEM Language_Str MSG_MAXSPEED_E                      = _UxGT("Max ") LCD_STR_E _UxGT(" Vitesse");
   PROGMEM Language_Str MSG_BED_Z                           = _UxGT("Plateau Z");
   PROGMEM Language_Str MSG_NOZZLE                          = _UxGT("Buse");
   PROGMEM Language_Str MSG_NOZZLE_N                        = _UxGT("Buse ~");
@@ -336,13 +349,13 @@ namespace Language_fr {
   PROGMEM Language_Str MSG_SELECT_E                        = _UxGT("Sélectionner *");
   PROGMEM Language_Str MSG_ACC                             = _UxGT("Accélération");
   PROGMEM Language_Str MSG_JERK                            = _UxGT("Jerk");
-  PROGMEM Language_Str MSG_VA_JERK                         = _UxGT("V") LCD_STR_A _UxGT("-Jerk");
-  PROGMEM Language_Str MSG_VB_JERK                         = _UxGT("V") LCD_STR_B _UxGT("-Jerk");
-  PROGMEM Language_Str MSG_VC_JERK                         = _UxGT("V") LCD_STR_C _UxGT("-Jerk");
-  PROGMEM Language_Str MSG_VI_JERK                         = _UxGT("V") LCD_STR_I _UxGT("-Jerk");
-  PROGMEM Language_Str MSG_VJ_JERK                         = _UxGT("V") LCD_STR_J _UxGT("-Jerk");
-  PROGMEM Language_Str MSG_VK_JERK                         = _UxGT("V") LCD_STR_K _UxGT("-Jerk");
-  PROGMEM Language_Str MSG_VE_JERK                         = _UxGT("Ve-Jerk");
+  PROGMEM Language_Str MSG_VA_JERK                         = _UxGT("Max ") LCD_STR_A _UxGT(" Jerk");
+  PROGMEM Language_Str MSG_VB_JERK                         = _UxGT("Max ") LCD_STR_B _UxGT(" Jerk");
+  PROGMEM Language_Str MSG_VC_JERK                         = _UxGT("Max ") LCD_STR_C _UxGT(" Jerk");
+  PROGMEM Language_Str MSG_VI_JERK                         = _UxGT("Max ") LCD_STR_I _UxGT(" Jerk");
+  PROGMEM Language_Str MSG_VJ_JERK                         = _UxGT("Max ") LCD_STR_J _UxGT(" Jerk");
+  PROGMEM Language_Str MSG_VK_JERK                         = _UxGT("Max ") LCD_STR_K _UxGT(" Jerk");
+  PROGMEM Language_Str MSG_VE_JERK                         = _UxGT("Max E Jerk");
   PROGMEM Language_Str MSG_JUNCTION_DEVIATION              = _UxGT("Junction Dev");
   PROGMEM Language_Str MSG_VELOCITY                        = _UxGT("Vélocité");
   PROGMEM Language_Str MSG_VMAX_A                          = _UxGT("Vmax ") LCD_STR_A;
@@ -372,9 +385,9 @@ namespace Language_fr {
   PROGMEM Language_Str MSG_A_STEPS                         = LCD_STR_A _UxGT(" pas/mm");
   PROGMEM Language_Str MSG_B_STEPS                         = LCD_STR_B _UxGT(" pas/mm");
   PROGMEM Language_Str MSG_C_STEPS                         = LCD_STR_C _UxGT(" pas/mm");
-  PROGMEM Language_Str MSG_I_STEPS                         = LCD_STR_I _UxGT(" Steps/mm");
-  PROGMEM Language_Str MSG_J_STEPS                         = LCD_STR_J _UxGT(" Steps/mm");
-  PROGMEM Language_Str MSG_K_STEPS                         = LCD_STR_K _UxGT(" Steps/mm");
+  PROGMEM Language_Str MSG_I_STEPS                         = LCD_STR_I _UxGT(" pas/mm");
+  PROGMEM Language_Str MSG_J_STEPS                         = LCD_STR_J _UxGT(" pas/mm");
+  PROGMEM Language_Str MSG_K_STEPS                         = LCD_STR_K _UxGT(" pas/mm");
   PROGMEM Language_Str MSG_E_STEPS                         = _UxGT("E pas/mm");
   PROGMEM Language_Str MSG_EN_STEPS                        = _UxGT("* pas/mm");
   PROGMEM Language_Str MSG_TEMPERATURE                     = _UxGT("Température");
@@ -500,6 +513,7 @@ namespace Language_fr {
   PROGMEM Language_Str MSG_MANUAL_DEPLOY                   = _UxGT("Déployer Sonde Z");
   PROGMEM Language_Str MSG_MANUAL_STOW                     = _UxGT("Ranger Sonde Z");
   PROGMEM Language_Str MSG_HOME_FIRST                      = _UxGT("Origine %s%s%s Premier");
+  PROGMEM Language_Str MSG_ZPROBE_SETTINGS                 = _UxGT("Paramètres Palpeur");
   PROGMEM Language_Str MSG_ZPROBE_OFFSETS                  = _UxGT("Position sonde Z");
   PROGMEM Language_Str MSG_ZPROBE_XOFFSET                  = _UxGT("Décalage X");
   PROGMEM Language_Str MSG_ZPROBE_YOFFSET                  = _UxGT("Décalage Y");
@@ -607,6 +621,7 @@ namespace Language_fr {
   PROGMEM Language_Str MSG_FILAMENT_CHANGE_NOZZLE          = _UxGT("  Buse: ");
   PROGMEM Language_Str MSG_RUNOUT_SENSOR                   = _UxGT("Capteur filament");
   PROGMEM Language_Str MSG_RUNOUT_DISTANCE_MM              = _UxGT("Distance mm");
+  PROGMEM Language_Str MSG_RUNOUT_ENABLE                   = _UxGT("Activer détecteur");
   PROGMEM Language_Str MSG_KILL_HOMING_FAILED              = _UxGT("Echec origine");
   PROGMEM Language_Str MSG_LCD_PROBING_FAILED              = _UxGT("Echec de la sonde");
 

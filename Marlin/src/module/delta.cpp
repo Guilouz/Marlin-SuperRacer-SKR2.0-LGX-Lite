@@ -121,8 +121,8 @@ void recalc_delta_settings() {
  */
 
 #define DELTA_DEBUG(VAR) do { \
-    SERIAL_ECHOLNPAIR_P(PSTR("Cartesian X"), VAR.x, SP_Y_STR, VAR.y, SP_Z_STR, VAR.z); \
-    SERIAL_ECHOLNPAIR_P(PSTR("Delta A"), delta.a, SP_B_STR, delta.b, SP_C_STR, delta.c); \
+    SERIAL_ECHOLNPGM_P(PSTR("Cartesian X"), VAR.x, SP_Y_STR, VAR.y, SP_Z_STR, VAR.z); \
+    SERIAL_ECHOLNPGM_P(PSTR("Delta A"), delta.a, SP_B_STR, delta.b, SP_C_STR, delta.c); \
   }while(0)
 
 void inverse_kinematics(const xyz_pos_t &raw) {
@@ -254,7 +254,7 @@ void home_delta() {
   current_position.z = DIFF_TERN(HAS_BED_PROBE, delta_height + 10, probe.offset.z);
   line_to_current_position(homing_feedrate(Z_AXIS));
   planner.synchronize();
-  TERN_(SENSORLESS_PROBING,endstops.report_states());
+  TERN_(HAS_DELTA_SENSORLESS_PROBING, endstops.report_states());
 
   // Re-enable stealthChop if used. Disable diag1 pin on driver.
   #if ENABLED(SENSORLESS_HOMING) && DISABLED(ENDSTOPS_ALWAYS_ON_DEFAULT)
