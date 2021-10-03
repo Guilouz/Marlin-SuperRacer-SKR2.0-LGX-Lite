@@ -79,6 +79,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
 
   - Si `MKS ROBIN NANO V3`, définissez ces valeurs :
     - Dans platformio.ini : `default_envs = mks_robin_nano_v3_usb_flash_drive_msc`
+    - Dans pins_MKS_ROBIN_NANO_V3.h : '#define FIL_RUNOUT_PIN PA4'
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_MKS_ROBIN_NANO_V3`
     - Dans Configuration.h : `#define SERIAL_PORT -1`
     - Dans Configuration.h : `#define SERIAL_PORT_2 3`
