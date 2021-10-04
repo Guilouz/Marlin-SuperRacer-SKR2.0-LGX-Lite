@@ -44,7 +44,6 @@ Lire attentivement ceci pour [SKR 2.0 Rev. A et Rev. B](https://docs.google.com/
 - Support G26 - Mesh Validation Pattern
 - Support G33 - Delta Auto Calibration
 - Support du transfert de fichier binaire (transfert du fichier firmware à distance via Octoprint)
-- Support de l'extinction de la chauffe après 15 minutes d'inactivité de l'extrudeur
 - Support des commandes d'action de l'hôte
 - Activation du ventilateur de la hotend uniquement quand la chauffe dépasse 50°C
 - Prise en charge de plusieurs volumes (microSD & USB)
