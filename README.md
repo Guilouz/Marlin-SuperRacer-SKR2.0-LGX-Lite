@@ -73,7 +73,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et ex
 
   - Si `EXTRUDEUR STOCK`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
-    - Dans Configuration.h : `#define INVERT_E0_DIR`
+    - Dans Configuration.h : `#define INVERT_E0_DIR true`
     - Dans Configuration_adv.h : `#define E0_CURRENT      1050`
 
   - Si `MKS ROBIN NANO V3`, définissez ces valeurs :
