@@ -597,6 +597,10 @@
   #error "SPINDLE_LASER_PWM (true) is now set with SPINDLE_LASER_USE_PWM (enabled)."
 #elif ANY(IS_RAMPS_EEB, IS_RAMPS_EEF, IS_RAMPS_EFB, IS_RAMPS_EFF, IS_RAMPS_SF)
   #error "The IS_RAMPS_* conditionals (for heater/fan/bed pins) are now called FET_ORDER_*."
+#elif defined(PROBE_TEMP_COMPENSATION)
+  #error "PROBE_TEMP_COMPENSATION is now set using the PTC_PROBE, PTC_BED, PTC_HOTEND options."
+#elif defined(BTC_PROBE_TEMP)
+  #error "BTC_PROBE_TEMP is now PTC_PROBE_TEMP."
 #endif
 
 #if MB(DUE3DOM_MINI) && PIN_EXISTS(TEMP_2) && DISABLED(TEMP_SENSOR_BOARD)
@@ -611,44 +615,60 @@ static_assert(COUNT(arm) == LOGICAL_AXES, "AXIS_RELATIVE_MODES must contain " _L
 /**
  * Probe temp compensation requirements
  */
-
-#if ENABLED(PROBE_TEMP_COMPENSATION)
-  #if defined(PTC_PARK_POS_X) || defined(PTC_PARK_POS_Y) || defined(PTC_PARK_POS_Z)
-    #error "PTC_PARK_POS_[XYZ] is now PTC_PARK_POS (array)."
-  #elif !defined(PTC_PARK_POS)
-    #error "PROBE_TEMP_COMPENSATION requires PTC_PARK_POS."
-  #elif defined(PTC_PROBE_POS_X) || defined(PTC_PROBE_POS_Y)
-    #error "PTC_PROBE_POS_[XY] is now PTC_PROBE_POS (array)."
-  #elif !defined(PTC_PROBE_POS)
-    #error "PROBE_TEMP_COMPENSATION requires PTC_PROBE_POS."
+#if HAS_PTC
+  #if TEMP_SENSOR_PROBE && TEMP_SENSOR_BED
+    #if defined(PTC_PARK_POS_X) || defined(PTC_PARK_POS_Y) || defined(PTC_PARK_POS_Z)
+      #error "PTC_PARK_POS_[XYZ] is now PTC_PARK_POS (array)."
+    #elif !defined(PTC_PARK_POS)
+      #error "PTC_PARK_POS is required for Probe Temperature Compensation."
+    #elif defined(PTC_PROBE_POS_X) || defined(PTC_PROBE_POS_Y)
+      #error "PTC_PROBE_POS_[XY] is now PTC_PROBE_POS (array)."
+    #elif !defined(PTC_PROBE_POS)
+      #error "PTC_PROBE_POS is required for Probe Temperature Compensation."
+    #endif
   #endif
 
-  #ifdef PTC_SAMPLE_START
-    constexpr auto _ptc_sample_start = PTC_SAMPLE_START;
+  #ifdef PTC_PROBE_START
+    constexpr auto _ptc_sample_start = PTC_PROBE_START;
     constexpr decltype(_ptc_sample_start) _test_ptc_sample_start = 12.3f;
-    static_assert(_test_ptc_sample_start != 12.3f, "PTC_SAMPLE_START must be a whole number.");
+    static_assert(_test_ptc_sample_start != 12.3f, "PTC_PROBE_START must be a whole number.");
   #endif
-  #ifdef PTC_SAMPLE_RES
-    constexpr auto _ptc_sample_res = PTC_SAMPLE_RES;
+  #ifdef PTC_PROBE_RES
+    constexpr auto _ptc_sample_res = PTC_PROBE_RES;
     constexpr decltype(_ptc_sample_res) _test_ptc_sample_res = 12.3f;
-    static_assert(_test_ptc_sample_res != 12.3f, "PTC_SAMPLE_RES must be a whole number.");
+    static_assert(_test_ptc_sample_res != 12.3f, "PTC_PROBE_RES must be a whole number.");
   #endif
-  #ifdef BTC_SAMPLE_START
-    constexpr auto _btc_sample_start = BTC_SAMPLE_START;
+  #ifdef PTC_BED_START
+    constexpr auto _btc_sample_start = PTC_BED_START;
     constexpr decltype(_btc_sample_start) _test_btc_sample_start = 12.3f;
-    static_assert(_test_btc_sample_start != 12.3f, "BTC_SAMPLE_START must be a whole number.");
+    static_assert(_test_btc_sample_start != 12.3f, "PTC_BED_START must be a whole number.");
   #endif
-  #ifdef BTC_SAMPLE_RES
-    constexpr auto _btc_sample_res = BTC_SAMPLE_RES;
+  #ifdef PTC_BED_RES
+    constexpr auto _btc_sample_res = PTC_BED_RES;
     constexpr decltype(_btc_sample_res) _test_btc_sample_res = 12.3f;
-    static_assert(_test_btc_sample_res != 12.3f, "BTC_SAMPLE_RES must be a whole number.");
+    static_assert(_test_btc_sample_res != 12.3f, "PTC_BED_RES must be a whole number.");
   #endif
-  #ifdef BTC_PROBE_TEMP
-    constexpr auto _btc_probe_temp = BTC_PROBE_TEMP;
+  #ifdef PTC_PROBE_TEMP
+    constexpr auto _btc_probe_temp = PTC_PROBE_TEMP;
     constexpr decltype(_btc_probe_temp) _test_btc_probe_temp = 12.3f;
-    static_assert(_test_btc_probe_temp != 12.3f, "BTC_PROBE_TEMP must be a whole number.");
+    static_assert(_test_btc_probe_temp != 12.3f, "PTC_PROBE_TEMP must be a whole number.");
   #endif
-#endif
+  #if ENABLED(PTC_HOTEND)
+    #if EXTRUDERS != 1
+      #error "PTC_HOTEND only works with a single extruder."
+    #endif
+    #ifdef PTC_HOTEND_START
+      constexpr auto _etc_sample_start = PTC_HOTEND_START;
+      constexpr decltype(_etc_sample_start) _test_etc_sample_start = 12.3f;
+      static_assert(_test_etc_sample_start != 12.3f, "PTC_HOTEND_START must be a whole number.");
+    #endif
+    #ifdef PTC_HOTEND_RES
+      constexpr auto _etc_sample_res = PTC_HOTEND_RES;
+      constexpr decltype(_etc_sample_res) _test_etc_sample_res = 12.3f;
+      static_assert(_test_etc_sample_res != 12.3f, "PTC_HOTEND_RES must be a whole number.");
+    #endif
+  #endif
+#endif // HAS_PTC
 
 /**
  * Marlin release, version and default string
@@ -1226,8 +1246,8 @@ static_assert(Y_MAX_LENGTH >= Y_BED_SIZE, "Movement bounds (Y_MIN_POS, Y_MAX_POS
     #error "LIN_ADVANCE and S_CURVE_ACCELERATION may not play well together! Enable EXPERIMENTAL_SCURVE to continue."
   #elif ENABLED(DIRECT_STEPPING)
     #error "DIRECT_STEPPING is incompatible with LIN_ADVANCE. Enable in external planner if possible."
-  #elif !HAS_JUNCTION_DEVIATION && defined(DEFAULT_EJERK)
-    static_assert(DEFAULT_EJERK >= 10, "It is strongly recommended to set DEFAULT_EJERK >= 10 when using LIN_ADVANCE.");
+  #elif NONE(HAS_JUNCTION_DEVIATION, ALLOW_LOW_EJERK) && defined(DEFAULT_EJERK)
+    static_assert(DEFAULT_EJERK >= 10, "It is strongly recommended to set DEFAULT_EJERK >= 10 when using LIN_ADVANCE. Enable ALLOW_LOW_EJERK to bypass this alert (e.g., for direct drive).");
   #endif
 #endif
 
@@ -1241,7 +1261,7 @@ static_assert(Y_MAX_LENGTH >= Y_BED_SIZE, "Movement bounds (Y_MIN_POS, Y_MAX_POS
 /**
  * (Magnetic) Parking Extruder requirements
  */
-#if ANY(PARKING_EXTRUDER, MAGNETIC_PARKING_EXTRUDER)
+#if EITHER(PARKING_EXTRUDER, MAGNETIC_PARKING_EXTRUDER)
   #if ENABLED(EXT_SOLENOID)
     #error "(MAGNETIC_)PARKING_EXTRUDER and EXT_SOLENOID are incompatible. (Pins are used twice.)"
   #elif EXTRUDERS != 2
@@ -1615,7 +1635,7 @@ static_assert(Y_MAX_LENGTH >= Y_BED_SIZE, "Movement bounds (Y_MIN_POS, Y_MAX_POS
   #if ENABLED(NOZZLE_AS_PROBE)
     static_assert(sanity_nozzle_to_probe_offset.x == 0 && sanity_nozzle_to_probe_offset.y == 0,
                   "NOZZLE_AS_PROBE requires the XY offsets in NOZZLE_TO_PROBE_OFFSET to both be 0.");
-  #elif !IS_KINEMATIC
+  #else
     static_assert(PROBING_MARGIN       >= 0, "PROBING_MARGIN must be >= 0.");
     static_assert(PROBING_MARGIN_BACK  >= 0, "PROBING_MARGIN_BACK must be >= 0.");
     static_assert(PROBING_MARGIN_FRONT >= 0, "PROBING_MARGIN_FRONT must be >= 0.");
@@ -1658,10 +1678,6 @@ static_assert(Y_MAX_LENGTH >= Y_BED_SIZE, "Movement bounds (Y_MIN_POS, Y_MAX_POS
 
   #if Z_PROBE_LOW_POINT > 0
     #error "Z_PROBE_LOW_POINT must be less than or equal to 0."
-  #endif
-
-  #if HOMING_Z_WITH_PROBE && IS_CARTESIAN && DISABLED(Z_SAFE_HOMING)
-    #error "Z_SAFE_HOMING is recommended when homing with a probe. Enable it or comment out this line to continue."
   #endif
 
   #if ENABLED(PROBE_ACTIVATION_SWITCH)
@@ -2619,7 +2635,7 @@ static_assert(Y_MAX_LENGTH >= Y_BED_SIZE, "Movement bounds (Y_MIN_POS, Y_MAX_POS
   + COUNT_ENABLED(FYSETC_MINI_12864_X_X, FYSETC_MINI_12864_1_2, FYSETC_MINI_12864_2_0, FYSETC_MINI_12864_2_1, FYSETC_GENERIC_12864_1_1) \
   + COUNT_ENABLED(LCD_SAINSMART_I2C_1602, LCD_SAINSMART_I2C_2004) \
   + COUNT_ENABLED(MKS_12864OLED, MKS_12864OLED_SSD1306) \
-  + COUNT_ENABLED(MKS_TS35_V2_0, MKS_ROBIN_TFT24, MKS_ROBIN_TFT28, MKS_ROBIN_TFT32, MKS_ROBIN_TFT35, MKS_ROBIN_TFT43, MKS_ROBIN_TFT_V1_1R, ANET_ET4_TFT28, ANET_ET5_TFT35) \
+  + COUNT_ENABLED(MKS_TS35_V2_0, MKS_ROBIN_TFT24, MKS_ROBIN_TFT28, MKS_ROBIN_TFT32, MKS_ROBIN_TFT35, MKS_ROBIN_TFT43, MKS_ROBIN_TFT_V1_1R, ANET_ET4_TFT28, ANET_ET5_TFT35, BIQU_BX_TFT70, BTT_TFT35_SPI_V1_0) \
   + COUNT_ENABLED(TFTGLCD_PANEL_SPI, TFTGLCD_PANEL_I2C) \
   + COUNT_ENABLED(VIKI2, miniVIKI) \
   + ENABLED(WYH_L12864) \
@@ -2670,7 +2686,7 @@ static_assert(Y_MAX_LENGTH >= Y_BED_SIZE, "Movement bounds (Y_MIN_POS, Y_MAX_POS
 #undef IS_U8GLIB_SSD1306
 #undef IS_EXTUI
 
-#if ANY(TFT_GENERIC, MKS_TS35_V2_0, MKS_ROBIN_TFT24, MKS_ROBIN_TFT28, MKS_ROBIN_TFT32, MKS_ROBIN_TFT35, MKS_ROBIN_TFT43, MKS_ROBIN_TFT_V1_1R, TFT_TRONXY_X5SA, ANYCUBIC_TFT35, ANYCUBIC_TFT35, LONGER_LK_TFT28, ANET_ET4_TFT28, ANET_ET5_TFT35, BIQU_BX_TFT70)
+#if ANY(TFT_GENERIC, MKS_TS35_V2_0, MKS_ROBIN_TFT24, MKS_ROBIN_TFT28, MKS_ROBIN_TFT32, MKS_ROBIN_TFT35, MKS_ROBIN_TFT43, MKS_ROBIN_TFT_V1_1R, TFT_TRONXY_X5SA, ANYCUBIC_TFT35, ANYCUBIC_TFT35, LONGER_LK_TFT28, ANET_ET4_TFT28, ANET_ET5_TFT35, BIQU_BX_TFT70, BTT_TFT35_SPI_V1_0)
   #if NONE(TFT_COLOR_UI, TFT_CLASSIC_UI, TFT_LVGL_UI)
     #error "TFT_COLOR_UI, TFT_CLASSIC_UI, TFT_LVGL_UI is required for your TFT. Please enable one."
   #elif MANY(TFT_COLOR_UI, TFT_CLASSIC_UI, TFT_LVGL_UI)
@@ -2710,6 +2726,10 @@ static_assert(Y_MAX_LENGTH >= Y_BED_SIZE, "Movement bounds (Y_MIN_POS, Y_MAX_POS
 
 #if BOTH(CHIRON_TFT_STANDARD, CHIRON_TFT_NEW)
   #error "Please select only one of CHIRON_TFT_STANDARD or CHIRON_TFT_NEW."
+#endif
+
+#if EITHER(MKS_TS35_V2_0, BTT_TFT35_SPI_V1_0) && SD_CONNECTION_IS(LCD)
+  #error "SDCARD_CONNECTION cannot be set to LCD for the enabled TFT. No available SD card reader."
 #endif
 
 /**

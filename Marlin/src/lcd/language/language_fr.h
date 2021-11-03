@@ -99,7 +99,7 @@ namespace Language_fr {
   LSTR MSG_TRAMMING_WIZARD                = _UxGT("Assistant Molettes");
   LSTR MSG_SELECT_ORIGIN                  = _UxGT("Molette du lit"); // Not a selection of the origin
   LSTR MSG_LAST_VALUE_SP                  = _UxGT("Ecart origine ");
-  #if PREHEAT_COUNT
+  #if HAS_PREHEAT
     LSTR MSG_PREHEAT_1                    = _UxGT("Préchauffage ") PREHEAT_1_LABEL;
     LSTR MSG_PREHEAT_1_H                  = _UxGT("Préchauffage ") PREHEAT_1_LABEL " ~";
     LSTR MSG_PREHEAT_1_END                = _UxGT("Préch. ") PREHEAT_1_LABEL _UxGT(" buse");
@@ -739,6 +739,8 @@ namespace Language_fr {
 
   LSTR MSG_SD_CARD                        = _UxGT("Carte SD");
   LSTR MSG_USB_DISK                       = _UxGT("Clé USB");
+
+  LSTR MSG_HOST_SHUTDOWN                  = _UxGT("Arrêt de l'hôte");
 
   // These strings can be the same in all languages
   LSTR MSG_MARLIN                         = _UxGT("Marlin");
