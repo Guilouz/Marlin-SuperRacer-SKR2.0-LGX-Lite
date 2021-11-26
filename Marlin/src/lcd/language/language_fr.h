@@ -526,6 +526,7 @@ namespace Language_fr {
   LSTR MSG_ERR_MINTEMP                    = _UxGT("Erreur MINTEMP");
   LSTR MSG_HALTED                         = _UxGT("IMPRIMANTE ARRÊTÉE");
   LSTR MSG_PLEASE_RESET                   = _UxGT("Veuillez réinitialiser");
+  LSTR MSG_PREHEATING                     = _UxGT("Préchauffage...");
   LSTR MSG_HEATING                        = _UxGT("en chauffe...");
   LSTR MSG_COOLING                        = _UxGT("Refroidissement");
   LSTR MSG_BED_HEATING                    = _UxGT("Plateau en chauffe...");
@@ -564,6 +565,7 @@ namespace Language_fr {
   LSTR MSG_INFO_RUNAWAY_OFF               = _UxGT("Protection inactive");
   LSTR MSG_INFO_RUNAWAY_ON                = _UxGT("Protection active");
   LSTR MSG_HOTEND_IDLE_TIMEOUT            = _UxGT("Délai d'inactivité du hotend");
+  LSTR MSG_FAN_SPEED_FAULT                = _UxGT("Défaut de vitesse du ventilateur");
 
   LSTR MSG_CASE_LIGHT                     = _UxGT("Lumière caisson");
   LSTR MSG_CASE_LIGHT_BRIGHTNESS          = _UxGT("Luminosité");
@@ -607,6 +609,7 @@ namespace Language_fr {
   LSTR MSG_RUNOUT_SENSOR                  = _UxGT("Capteur fil.");
   LSTR MSG_RUNOUT_DISTANCE_MM             = _UxGT("Dist Runout mm");
   LSTR MSG_RUNOUT_ENABLE                  = _UxGT("Activer Runout");
+  LSTR MSG_FANCHECK                       = _UxGT("Contrôle tachymètre du ventilateur");
   LSTR MSG_KILL_HOMING_FAILED             = _UxGT("Echec origine");
   LSTR MSG_LCD_PROBING_FAILED             = _UxGT("Echec sonde");
 

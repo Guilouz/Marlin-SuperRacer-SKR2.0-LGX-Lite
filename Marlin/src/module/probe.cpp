@@ -362,6 +362,8 @@ FORCE_INLINE void probe_specific_action(const bool deploy) {
       #define WAIT_FOR_BED_HEAT
     #endif
 
+    LCD_MESSAGE(MSG_PREHEATING);
+
     DEBUG_ECHOPGM("Preheating ");
 
     #if ENABLED(WAIT_FOR_NOZZLE_HEAT)
@@ -770,9 +772,7 @@ float Probe::probe_at_point(const_float_t rx, const_float_t ry, const ProbePtRai
     if (DEBUGGING(LEVELING)) DEBUG_ECHOLNPGM("Position Not Reachable");
     return NAN;
   }
-  if (probe_relative) {                                     // The given position is in terms of the probe
-    npos -= offset_xy;                                      // Get the nozzle position
-  }
+  if (probe_relative) npos -= offset_xy;  // Get the nozzle position
 
   // Move the probe to the starting XYZ
   do_blocking_move_to(npos, feedRate_t(XY_PROBE_FEEDRATE_MM_S));
