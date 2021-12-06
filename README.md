@@ -22,7 +22,7 @@ Les fichiers STL nécessaires sont disponibles dans le dossier `_STL` [ici](http
 
 Lire attentivement ceci pour [SKR 2.0 Rev. A et Rev. B](https://docs.google.com/document/d/1IeKgfE2WIDjqH1fx5Yg7n1FOHVwhDFmDlZ-7QMlOEV0/edit?fbclid=IwAR3gCoyRlxSNaZfyHNV_BgGn1apJKmvagmzduOfGGYjY7I8kDBUVAuLyIi4).
 
-EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise désormait une autre version de processeur `STM32F429VGT6` à la place du `STM32F407VGT6`. Il est donc nécessaire de changer l'environnement dans le fichier `platformio.ini` pour la compilation car le firmware fourni dans la partie releases est compilé pour la version `STM32F429VGT6`.
+EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise désormait une autre version de processeur `STM32F429VGT6` à la place du `STM32F407VGT6`. Il est donc nécessaire de changer l'environnement dans le fichier `platformio.ini` pour la compilation car le firmware fourni dans la partie <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX/releases"releases</a> est compilé pour la version `STM32F429VGT6`.
 
 - `default_envs = BIGTREE_SKR_2` <br/>
 <img src="https://user-images.githubusercontent.com/12702322/144914479-673edf80-81ff-497d-a279-61d9cbf0199f.jpeg" width="400" /><br/>
