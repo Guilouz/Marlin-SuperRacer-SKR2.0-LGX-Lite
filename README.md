@@ -28,7 +28,7 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 <img src="https://user-images.githubusercontent.com/12702322/144914479-673edf80-81ff-497d-a279-61d9cbf0199f.jpeg" width="400" /><br/>
 
 - `default_envs = BIGTREE_SKR_2_F429` <br/>
-<img src=https://user-images.githubusercontent.com/12702322/144914613-1f89739c-371e-442d-b07d-eaeff1332e45.jpeg" width="400" /><br/>
+<img src="https://user-images.githubusercontent.com/12702322/144914613-1f89739c-371e-442d-b07d-eaeff1332e45.jpeg" width="400" /><br/>
 
 ## Schema de câblage :
 
