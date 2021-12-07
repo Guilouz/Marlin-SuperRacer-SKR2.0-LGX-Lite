@@ -8,7 +8,7 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 
 <br /><br /><br /><br /><br /><br /><br /><br />
 
-**Firmware Marlin 2.0.9.1 bugfix configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0 Rev. B.**
+**Firmware Marlin configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0**
 
 Le firmware pour écran BigTreeTech TFT70 3.0 est disponible [ici](https://github.com/Guilouz/BTT-TFT70-SuperRacer).
 
@@ -34,9 +34,11 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 
 ![FLSUN SuperRacer SKR2](https://user-images.githubusercontent.com/12702322/128229118-0e99d567-2a6f-4fc2-8bfe-600c4e845f50.png)
 
+![Capture d’écran 2021-12-08 à 00 44 42](https://user-images.githubusercontent.com/12702322/145123450-537eda9a-34b1-428f-9799-957fa6c3db11.jpg)
+
 ## Principales fonctionnalités configurées :
 
-- Support carte mère BigTreeTech SKR 2.0 Rev. B
+- Support carte mère BigTreeTech SKR 2.0
 - Support extrudeur Bondtech LGX
 - Support drivers TMC2209/TMC2226 UART
 - Support écrans BigTreeTech
