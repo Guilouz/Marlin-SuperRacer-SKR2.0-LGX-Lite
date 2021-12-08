@@ -83,9 +83,11 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
 
   - Si vous voulez utiliser le port `microSD`, définissez cette valeur :
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
+    - Dans Configuration_adv.h : `//#define USE_OTG_USB_HOST`
 
   - Si vous voulez utiliser le port `USB`, définissez cette valeur :
     - Dans Configuration_adv.h : `#define USB_FLASH_DRIVE_SUPPORT`
+    - Dans Configuration_adv.h : `#define USE_OTG_USB_HOST`
 
   - Si `EXTRUDEUR FLSUN STOCK / BONDTECH BMG`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
