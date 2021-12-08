@@ -76,7 +76,7 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 
 ## Changements éventuels :
 
-Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B et extrudeur Bondtech LGX. Certains changements peuvent être effectués si vous disposez d'autres équipements.
+Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec MCU STM32F429VGT6 et extrudeur Bondtech LGX. Certains changements peuvent être effectués si vous disposez d'autres équipements.
 
   - Pour changer la langue de Marlin en anglais, définissez ces valeurs :
     - Dans Configuration.h : `#define LCD_LANGUAGE en`
