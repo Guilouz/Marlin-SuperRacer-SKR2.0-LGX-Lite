@@ -89,12 +89,12 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans Configuration_adv.h : `#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `#define USE_OTG_USB_HOST`
 
-  - Si `EXTRUDEUR FLSUN STOCK / BONDTECH BMG`, définissez ces valeurs :
+  - Si `EXTRUDEUR FLSUN STOCK / BONDTECH BMG (BOWDEN)`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR true`
     - Dans Configuration_adv.h : `#define E0_CURRENT      1050`
 
-  - Si `EXTRUDEUR BONDTECH LGX`, définissez ces valeurs :
+  - Si `EXTRUDEUR BONDTECH LGX (BOWDEN)`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 400 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR false`
     - Dans Configuration_adv.h : `#define E0_CURRENT      600`
