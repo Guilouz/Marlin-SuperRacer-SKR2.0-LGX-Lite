@@ -20,7 +20,7 @@ Le firmware pour écran BigTreeTech TFT70 3.0 est disponible [ici](https://githu
 
 Les fichiers STL nécessaires pour l'écran, le support Neopixel et le support de bobines sont disponibles dans le dossier `_STL` [ici](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX/tree/main/_STL) et [ici](https://www.thingiverse.com/thing:5138588) pour le support du LGX Lite.
 
-<br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br />
 
 ## ATTENTION
 
