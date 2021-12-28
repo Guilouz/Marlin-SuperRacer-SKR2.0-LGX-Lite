@@ -8,7 +8,7 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 
 <br /><br /><br /><br /><br /><br /><br /><br />
 
-**Firmware Marlin configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0 et extrudeur Bondtech Direct Drive LGX Lite**
+**Firmware Marlin configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0 et extrudeur Direct Drive Bondtech LGX Lite**
 
 <br />
 
@@ -43,7 +43,7 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 ## Principales fonctionnalités configurées :
 
 - Support carte mère BigTreeTech SKR 2.0
-- Support extrudeur Bondtech LGX
+- Support extrudeur Direct Drive Bondtech LGX Lite
 - Support drivers TMC2209/TMC2226 UART
 - Support écrans BigTreeTech
 - Support Bed Leveling Bilinear 9 x 9 points
@@ -97,16 +97,22 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR true`
     - Dans Configuration_adv.h : `#define E0_CURRENT      1050`
+    - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_UNLOAD_LENGTH      350`
+    - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_FAST_LOAD_LENGTH     350`
 
   - Si `EXTRUDEUR OMG-V2-S (BOWDEN)`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 385 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR true`
     - Dans Configuration_adv.h : `#define E0_CURRENT      1050`
+    - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_UNLOAD_LENGTH      350`
+    - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_FAST_LOAD_LENGTH     350`
 
   - Si `EXTRUDEUR BONDTECH LGX (BOWDEN)`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 400 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR false`
     - Dans Configuration_adv.h : `#define E0_CURRENT      600`
+    - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_UNLOAD_LENGTH      350`
+    - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_FAST_LOAD_LENGTH     350`
 
   - Si `MKS ROBIN NANO V3`, définissez ces valeurs :
     - Dans platformio.ini : `default_envs = mks_robin_nano_v3_usb_flash_drive_msc`
