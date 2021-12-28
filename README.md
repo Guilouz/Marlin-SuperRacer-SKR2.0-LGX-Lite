@@ -8,7 +8,7 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 
 <br /><br /><br /><br /><br /><br /><br /><br />
 
-**Firmware Marlin configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0**
+**Firmware Marlin configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0 et extrudeur Bondtech Direct Drive LGX Lite**
 
 Le firmware pour écran BigTreeTech TFT70 3.0 est disponible [ici](https://github.com/Guilouz/BTT-TFT70-SuperRacer).
 
