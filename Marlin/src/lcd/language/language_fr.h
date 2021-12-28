@@ -53,7 +53,7 @@ namespace Language_fr {
   LSTR MSG_MEDIA_INSERTED                 = _UxGT("Média inséré");
   LSTR MSG_MEDIA_REMOVED                  = _UxGT("Média retiré");
   LSTR MSG_MEDIA_WAITING                  = _UxGT("Attente média");
-  LSTR MSG_SD_INIT_FAIL                   = _UxGT("Échec de l'initialisation SD");
+  LSTR MSG_MEDIA_INIT_FAIL                = _UxGT("Échec de l'initialisation du média");
   LSTR MSG_MEDIA_READ_ERROR               = _UxGT("Erreur de lecture du média");
   LSTR MSG_MEDIA_USB_REMOVED              = _UxGT("USB débranché");
   LSTR MSG_MEDIA_USB_FAILED               = _UxGT("Erreur du média USB");
@@ -486,6 +486,7 @@ namespace Language_fr {
   LSTR MSG_BLTOUCH_STOW                   = _UxGT("Ranger");
   LSTR MSG_BLTOUCH_DEPLOY                 = _UxGT("Déployer");
   LSTR MSG_BLTOUCH_SW_MODE                = _UxGT("Mode SW");
+  LSTR MSG_BLTOUCH_SPEED_MODE             = _UxGT("Mode HS");
   LSTR MSG_BLTOUCH_5V_MODE                = _UxGT("Mode 5V");
   LSTR MSG_BLTOUCH_OD_MODE                = _UxGT("Mode OD");
   LSTR MSG_BLTOUCH_MODE_STORE             = _UxGT("Appliquer Mode");
@@ -728,6 +729,10 @@ namespace Language_fr {
   LSTR MSG_PROBE_WIZARD                   = _UxGT("Assistant Sonde Z");
   LSTR MSG_PROBE_WIZARD_PROBING           = _UxGT("Mesure référence");
   LSTR MSG_PROBE_WIZARD_MOVING            = _UxGT("Dépl. vers pos");
+
+  LSTR MSG_XATC                           = _UxGT("Assistant X-Twist");
+  LSTR MSG_XATC_DONE                      = _UxGT("Assistant X-Twist terminé!");
+  LSTR MSG_XATC_UPDATE_Z_OFFSET           = _UxGT("MAJ Z-Offset à ");
 
   LSTR MSG_SOUND                          = _UxGT("Sons");
 
