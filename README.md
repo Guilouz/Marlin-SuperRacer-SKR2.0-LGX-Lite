@@ -18,7 +18,8 @@ Le firmware pour écran BigTreeTech TFT70 3.0 est disponible [ici](https://githu
 
 <br />
 
-<img align="left" width=600 src="https://user-images.githubusercontent.com/12702322/147615685-57162819-8768-47c5-85eb-9a3dc08ee5a6.jpg" />
+<img align="left" width=600 src="https://user-images.githubusercontent.com/12702322/147615822-f4e13a89-36a5-49a1-b28a-3e4100890941.jpg" />
+
 
 <br />
 
