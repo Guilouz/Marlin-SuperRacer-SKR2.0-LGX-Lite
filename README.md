@@ -5,11 +5,12 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 
 **Firmware Marlin configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0 et extrudeur Direct Drive Bondtech LGX Lite**
 
-<img align="center" width=600 src="https://user-images.githubusercontent.com/12702322/116473468-7b693880-a877-11eb-8783-5eccf0b5fbc0.jpg" />
+<img align="center" width="600" src="https://user-images.githubusercontent.com/12702322/147616087-0f469071-5b6e-46a0-80cc-16946128bd5a.png" />
+
 
 <br />
 
-<img align="center" width=600 src="https://user-images.githubusercontent.com/12702322/147516889-67b58b86-4929-4c54-921e-f4cf3d9b31af.png" />
+<img align="center" width="600" src="https://user-images.githubusercontent.com/12702322/147516889-67b58b86-4929-4c54-921e-f4cf3d9b31af.png" />
 
 <br />
 
@@ -19,7 +20,7 @@ Les fichiers STL nécessaires pour l'écran, le support Neopixel et le support d
 
 <br />
 
-<img align="center" width=600 src="https://user-images.githubusercontent.com/12702322/147615822-f4e13a89-36a5-49a1-b28a-3e4100890941.jpg" />
+<img align="center" width="600" src="https://user-images.githubusercontent.com/12702322/147615822-f4e13a89-36a5-49a1-b28a-3e4100890941.jpg" />
 
 <br />
 
