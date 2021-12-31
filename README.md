@@ -84,9 +84,9 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 
 **G-Code de démarrage :**
 
-`G21 ; Unités en millimètres
-G90 ; Positionnement absolu
-M82 ; Axe E en mode absolu
+`G21 ; Unités en millimètres <br />
+G90 ; Positionnement absolu <br />
+M82 ; Axe E en mode absolu <br />
 M140 S{material_bed_temperature} ; Température du plateau
 M104 S{material_print_temperature} ; Température de la buse
 M190 S{material_bed_temperature} ; Attente la température du plateau
