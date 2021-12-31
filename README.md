@@ -84,38 +84,38 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 
 **G-Code de démarrage :**
 
-`G21 ; Unités en millimètres` <br />
-`G90 ; Positionnement absolu` <br />
-`M82 ; Axe E en mode absolu` <br />
-M140 S{material_bed_temperature} ; Température du plateau
-M104 S{material_print_temperature} ; Température de la buse
-M190 S{material_bed_temperature} ; Attente la température du plateau
-M109 S{material_print_temperature} ; Attente de la température de la buse
-G28 ; Origines des axes
-M420 S1 ; Activation du maillage
-; Descente de la Hotend et passage à la position de départ
-G1 Z150
-G1 X-130 Y0 Z0.4 F3000
-; Extrude environ 40mm en imprimant un arc de 90 degrés
-G3 X0 Y-130 I130 Z0.4 E40 F2700
-; Rétraction et déplacement de la hotend vers le haut
-G92 E0
-G1 E-1.5 F1800
-G0 Z0.5
-G1 E0 F300`
+`G21 ; Unités en millimètres`<br />
+`G90 ; Positionnement absolu`<br />
+`M82 ; Axe E en mode absolu`<br />
+`M140 S{material_bed_temperature} ; Température du plateau`<br />
+`M104 S{material_print_temperature} ; Température de la buse`<br />
+`M190 S{material_bed_temperature} ; Attente la température du plateau`<br />
+`M109 S{material_print_temperature} ; Attente de la température de la buse`<br />
+`G28 ; Origines des axes`<br />
+`M420 S1 ; Activation du maillage`<br />
+`; Descente de la Hotend et passage à la position de départ`<br />
+`G1 Z150`<br />
+`G1 X-130 Y0 Z0.4 F3000`<br />
+`; Extrude environ 40mm en imprimant un arc de 90 degrés`<br />
+`G3 X0 Y-130 I130 Z0.3 E40 F2700`<br />
+`; Rétraction et déplacement de la hotend vers le haut`<br />
+`G92 E0`<br />
+`G1 E-1.5 F1800`<br />
+`G0 Z0.5`<br />
+`G1 E0 F300`
 
 **G-Code de fin :**
 
-`G91 ; Positionnement relatif
-G1 E-1 F300 ; Rétraction avant déplacement de la hotend vers le haut
-G1 Z+5 E-5 F6000 ; Déplacement de la hotend vers le haut
-G28 X0 Y0 ; Origines des axes
-G90 ; Positionnement absolu
-G92 E0 ; Réinitialisation de l'extrudeur
-M104 S0 ; Arrêt de la chauffe de la buse
-M140 S0 ; Arrêt de la chauffe du plateau
-M107 ; Arrêt des ventilateurs
-M84 ; Désactivation des moteurs`
+`G91 ; Positionnement relatif`<br />
+`G1 E-1 F300 ; Rétraction avant déplacement de la hotend vers le haut`<br />
+`G1 Z+5 E-5 F6000 ; Déplacement de la hotend vers le haut`<br />
+`G28 X0 Y0 ; Origines des axes`<br />
+`G90 ; Positionnement absolu`<br />
+`G92 E0 ; Réinitialisation de l'extrudeur`<br />
+`M104 S0 ; Arrêt de la chauffe de la buse`<br />
+`M140 S0 ; Arrêt de la chauffe du plateau`<br />
+`M107 ; Arrêt des ventilateurs`<br />
+`M84 ; Désactivation des moteurs`
 
 **Rétraction :**
 
