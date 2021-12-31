@@ -36,6 +36,7 @@
 #elif ENABLED(EXTENSIBLE_UI)
   #include "../../lcd/extui/ui_api.h"
 #elif ENABLED(DWIN_CREALITY_LCD_ENHANCED)
+  #include "../../lcd/e3v2/enhanced/dwin_popup.h"
   #include "../../lcd/e3v2/enhanced/dwin.h"
 #endif
 
@@ -47,7 +48,7 @@
  * M0: Unconditional stop - Wait for user button press on LCD
  * M1: Conditional stop   - Wait for user button press on LCD
  */
-/*void GcodeSuite::M0_M1() {
+void GcodeSuite::M0_M1() {
   millis_t ms = 0;
   if (parser.seenval('P')) ms = parser.value_millis();              // Milliseconds to wait
   if (parser.seenval('S')) ms = parser.value_millis_from_seconds(); // Seconds to wait
@@ -89,6 +90,6 @@
   TERN_(HAS_RESUME_CONTINUE, wait_for_user_response(ms));
 
   TERN_(HAS_LCD_MENU, ui.reset_status());
-}*/
+}
 
 #endif // HAS_RESUME_CONTINUE
