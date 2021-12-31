@@ -158,7 +158,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_UNLOAD_LENGTH      350`
     - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_FAST_LOAD_LENGTH     350`
 
-- Si `EXTRUDEUR BONDTECH LGX LITE (DIRECT DRIVE)`, définissez ces valeurs :
+  - Si `EXTRUDEUR BONDTECH LGX LITE (DIRECT DRIVE)`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 562 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR false`
     - Dans Configuration_adv.h : `#define E0_CURRENT      650`
