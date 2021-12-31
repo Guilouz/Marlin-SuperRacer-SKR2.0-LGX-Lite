@@ -52,8 +52,8 @@ namespace Language_fr {
   LSTR MSG_MEDIA_ABORTING                 = _UxGT("Annulation...");
   LSTR MSG_MEDIA_INSERTED                 = _UxGT("Média inséré");
   LSTR MSG_MEDIA_REMOVED                  = _UxGT("Média retiré");
-  LSTR MSG_MEDIA_WAITING                  = _UxGT("Attente média");
-  LSTR MSG_MEDIA_INIT_FAIL                = _UxGT("Échec de l'initialisation du média");
+  LSTR MSG_MEDIA_WAITING                  = _UxGT("Attente du média");
+  LSTR MSG_MEDIA_INIT_FAIL                = _UxGT("Échec du chargement du média");
   LSTR MSG_MEDIA_READ_ERROR               = _UxGT("Erreur de lecture du média");
   LSTR MSG_MEDIA_USB_REMOVED              = _UxGT("USB débranché");
   LSTR MSG_MEDIA_USB_FAILED               = _UxGT("Erreur du média USB");
@@ -70,6 +70,9 @@ namespace Language_fr {
   LSTR MSG_HOMING                         = _UxGT("Origine");
   LSTR MSG_AUTO_HOME                      = _UxGT("Origine auto");
   LSTR MSG_AUTO_HOME_A                    = _UxGT("Origine @");
+  LSTR MSG_AUTO_HOME_X                    = _UxGT("Origine X");
+  LSTR MSG_AUTO_HOME_Y                    = _UxGT("Origine Y");
+  LSTR MSG_AUTO_HOME_Z                    = _UxGT("Origine Z");
   LSTR MSG_FILAMENT_SET                   = _UxGT("Paramètres Filament");
   LSTR MSG_FILAMENT_MAN                   = _UxGT("Gestion Filament");
   LSTR MSG_LEVBED_FL                      = _UxGT("Avant Gauche");
@@ -78,6 +81,7 @@ namespace Language_fr {
   LSTR MSG_LEVBED_BL                      = _UxGT("Arrière Gauche");
   LSTR MSG_LEVBED_BR                      = _UxGT("Arrière Droit");
   LSTR MSG_MANUAL_MESH                    = _UxGT("Maillage manuel");
+  LSTR MSG_AUTO_MESH                      = _UxGT("Maillage automatique");
   LSTR MSG_AUTO_Z_ALIGN                   = _UxGT("Z-Align Auto");
   LSTR MSG_ITERATION                      = _UxGT("Itération G34: %i");
   LSTR MSG_DECREASING_ACCURACY            = _UxGT("Diminution de la précision!");
@@ -421,6 +425,11 @@ namespace Language_fr {
   LSTR MSG_BUTTON_BACK                    = _UxGT("Retour");
   LSTR MSG_BUTTON_PROCEED                 = _UxGT("Procéder");
   LSTR MSG_BUTTON_SKIP                    = _UxGT("Passer");
+  LSTR MSG_BUTTON_INFO                    = _UxGT("Info");
+  LSTR MSG_BUTTON_LEVEL                   = _UxGT("Niveau");
+  LSTR MSG_BUTTON_PAUSE                   = _UxGT("Pause");
+  LSTR MSG_BUTTON_RESUME                  = _UxGT("Reprendre");
+  LSTR MSG_BUTTON_ADVANCED                = _UxGT("Avancé");
   LSTR MSG_PAUSING                        = _UxGT("Mise en pause...");
   LSTR MSG_PAUSE_PRINT                    = _UxGT("Pause impression");
   LSTR MSG_RESUME_PRINT                   = _UxGT("Reprendre impr.");
@@ -572,7 +581,8 @@ namespace Language_fr {
   LSTR MSG_CASE_LIGHT_BRIGHTNESS          = _UxGT("Luminosité");
   LSTR MSG_KILL_EXPECTED_PRINTER          = _UxGT("Imprimante incorrecte");
 
-  #if LCD_WIDTH >= 20
+  #if LCD_WIDTH >= 20 || HAS_DWIN_E3V2
+    LSTR MSG_INFO_PRINT_COUNT_RESET       = _UxGT("Réinitialiser le nombre d'impressions");
     LSTR MSG_INFO_PRINT_COUNT             = _UxGT("Nbre impressions");
     LSTR MSG_INFO_COMPLETED_PRINTS        = _UxGT("Terminées");
     LSTR MSG_INFO_PRINT_TIME              = _UxGT("Tps impr. total");
