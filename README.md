@@ -87,10 +87,10 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 `G21 ; Unités en millimètres`<br />
 `G90 ; Positionnement absolu`<br />
 `M82 ; Axe E en mode absolu`<br />
-`M140 S{material_bed_temperature} ; Température du plateau`<br />
-`M104 S{material_print_temperature} ; Température de la buse`<br />
-`M190 S{material_bed_temperature} ; Attente la température du plateau`<br />
-`M109 S{material_print_temperature} ; Attente de la température de la buse`<br />
+`M140 S{material_bed_temperature} ; Température du plateau` (pour Cura)<br />
+`M104 S{material_print_temperature} ; Température de la buse` (pour Cura)<br />
+`M190 S{material_bed_temperature} ; Attente la température du plateau` (pour Cura)<br />
+`M109 S{material_print_temperature} ; Attente de la température de la buse` (pour Cura)<br />
 `G28 ; Origines des axes`<br />
 `M420 S1 ; Activation du maillage`<br />
 `; Descente de la Hotend et passage à la position de départ`<br />
