@@ -119,8 +119,8 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 
 **Rétraction :**
 
-- Distance : 1.2mm
-- Vitesse : 35 mm/s
+- Distance : `1.2mm`
+- Vitesse : `35 mm/s`
 
 ## Changements éventuels :
 
