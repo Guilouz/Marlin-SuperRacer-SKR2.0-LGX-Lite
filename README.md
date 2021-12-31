@@ -154,9 +154,16 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
   - Si `EXTRUDEUR BONDTECH LGX (BOWDEN)`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 400 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR false`
-    - Dans Configuration_adv.h : `#define E0_CURRENT      600`
+    - Dans Configuration_adv.h : `#define E0_CURRENT      650`
     - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_UNLOAD_LENGTH      350`
     - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_FAST_LOAD_LENGTH     350`
+
+- Si `EXTRUDEUR BONDTECH LGX LITE (DIRECT DRIVE)`, définissez ces valeurs :
+    - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 562 }`
+    - Dans Configuration.h : `#define INVERT_E0_DIR false`
+    - Dans Configuration_adv.h : `#define E0_CURRENT      650`
+    - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_UNLOAD_LENGTH      70`
+    - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_FAST_LOAD_LENGTH     70`
 
   - Si `MKS ROBIN NANO V3`, définissez ces valeurs :
     - Dans platformio.ini : `default_envs = mks_robin_nano_v3_usb_flash_drive_msc`
