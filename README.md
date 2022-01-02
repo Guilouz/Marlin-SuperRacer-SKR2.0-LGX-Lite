@@ -94,6 +94,10 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  <td>
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798455/Spool.Holder.zip">Spool Holder.zip</a>
  </td>
+ <td>
+ - Nécessite 4 vis M3x18<br />
+ - Nécessite 4 roulements à bille 608ZZ
+ </td>
  </tr>
  <tr>
  <td>
