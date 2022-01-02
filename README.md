@@ -262,10 +262,10 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_FAST_LOAD_LENGTH     70`
 
   - Si `MKS ROBIN NANO V3`, définissez ces valeurs :
-    - Dans platformio.ini : `default_envs = mks_robin_nano_v3_usb_flash_drive_msc`
+    - Dans platformio.ini : `default_envs = mks_robin_nano_v3`
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_MKS_ROBIN_NANO_V3`
     - Dans Configuration.h : `#define SERIAL_PORT -1`
-    - Dans Configuration.h : `#define SERIAL_PORT_2 3`
+    - Dans Configuration.h : `#define SERIAL_PORT_2 1`
     - Dans Configuration.h : `#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN`
     - Dans Configuration.h : `//#define Z_MIN_PROBE_PIN PA0`
     - Dans Configuration.h : `//#define NEOPIXEL_LED`
@@ -275,6 +275,11 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans Configuration_adv.h : `#define USB_FLASH_DRIVE_SUPPORT` pour utiliser le port USB
     - Dans Configuration_adv.h : `#define USE_OTG_USB_HOST` pour utiliser le port USB
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
+
+Il est également nécessaire de déplacer le branchement des ventilateurs de refroiddisement du port FAN1 vers le port FAN2 et de définir ces valeurs :
+
+    - Dans pins_MKS_ROBIN_NANO_V3_common.h : `#define FAN_PIN PB1`
+    - Dans pins_MKS_ROBIN_NANO_V3_common.h : `#define FAN1_PIN PC14`
     
   - Si `SKR 1.3`, définissez ces valeurs :
     - Dans platformio.ini : `default_envs = LPC1768`
