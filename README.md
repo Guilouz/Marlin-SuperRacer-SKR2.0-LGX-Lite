@@ -98,7 +98,7 @@ EDIT 06/12/2021 : En raison de la p√©nurie de composants, BigTreeTech utilise d√
  </tr>
  <tr>
  <td>
- <img align="center" width="300" src="ttps://user-images.githubusercontent.com/12702322/147864172-148c6c74-0a0a-4b37-b48e-9f764aec81ea.png" />
+ <img align="center" width="300" src="https://user-images.githubusercontent.com/12702322/147864172-148c6c74-0a0a-4b37-b48e-9f764aec81ea.png" />
  </td>
  <td>
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798458/Filament.Sensor.Mount.zip">Filament Sensor Mount.zip</a>
