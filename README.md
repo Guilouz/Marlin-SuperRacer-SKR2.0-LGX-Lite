@@ -109,7 +109,7 @@ default_envs = BIGTREE_SKR_2_F429
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798455/Spool.Holder.zip">Spool Holder.zip</a>
  </td>
  <td>
- - Nécessite 4 vis M3x18<br />
+ - Nécessite 4 vis M3x20<br />
  - Nécessite 4 roulements à billes 608ZZ
  </td>
  </tr>
