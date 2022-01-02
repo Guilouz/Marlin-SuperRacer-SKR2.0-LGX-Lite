@@ -22,11 +22,24 @@ Lire attentivement ceci pour [SKR 2.0 Rev. A et Rev. B](https://docs.google.com/
 
 EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise désormait une autre version de processeur `STM32F429VGT6` à la place du `STM32F407VGT6`. Il est donc nécessaire de changer l'environnement dans le fichier `platformio.ini` pour la compilation. Le firmware terminant par `F429` fourni dans la partie <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/releases">releases</a> est compatible avec cette nouvelle version.
 
-- `default_envs = BIGTREE_SKR_2` <br/>
+<table>
+<tr>
+<td>
 <img src="https://user-images.githubusercontent.com/12702322/144914479-673edf80-81ff-497d-a279-61d9cbf0199f.jpeg" width="400" /><br/>
-
-- `default_envs = BIGTREE_SKR_2_F429` <br/>
+</td>
+<td>
+`default_envs = BIGTREE_SKR_2`
+</td>
+</tr>
+<tr>
+<td>
 <img src="https://user-images.githubusercontent.com/12702322/144914613-1f89739c-371e-442d-b07d-eaeff1332e45.jpeg" width="400" /><br/>
+</td>
+<td>
+`default_envs = BIGTREE_SKR_2_F429`
+</td>
+</tr>
+</table>
 
 ## Schema de câblage :
 
