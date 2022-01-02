@@ -275,11 +275,10 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans Configuration_adv.h : `#define USB_FLASH_DRIVE_SUPPORT` pour utiliser le port USB
     - Dans Configuration_adv.h : `#define USE_OTG_USB_HOST` pour utiliser le port USB
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
-
-Il est également nécessaire de déplacer le branchement des ventilateurs de refroiddisement du port `FAN1` vers le port `FAN2` et de définir ces valeurs :
-
     - Dans pins_MKS_ROBIN_NANO_V3_common.h : `#define FAN_PIN PB1`
     - Dans pins_MKS_ROBIN_NANO_V3_common.h : `#define FAN1_PIN PC14`
+
+Il est également nécessaire de déplacer le branchement des ventilateurs de refroiddisement du port `FAN1` vers le port `FAN2`.
     
   - Si `SKR 1.3`, définissez ces valeurs :
     - Dans platformio.ini : `default_envs = LPC1768`
