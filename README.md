@@ -142,7 +142,7 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798462/Neopixels.Mount.zip">Neopixels Mount.zip</a>
  </td>
  <td>
-- Nécessite des colliers de serrage
+- Nécessite des colliers de serrage 2.5mm
  </td>
  </tr>
  <tr>
