@@ -16,8 +16,6 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 
 Le firmware pour écran BigTreeTech TFT70 3.0 est disponible [ici](https://github.com/Guilouz/BTT-TFT70-SuperRacer).
 
-Les fichiers STL nécessaires pour l'écran, le support Neopixel et le support de bobines sont disponibles dans le dossier `_STL` [ici](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX/tree/main/_STL) et [ici](https://www.thingiverse.com/thing:5138588) pour le support du LGX Lite.
-
 <br />
 
 <img align="center" width="600" src="https://user-images.githubusercontent.com/12702322/147615822-f4e13a89-36a5-49a1-b28a-3e4100890941.jpg" />
@@ -79,6 +77,12 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 - Lancez une calibration de l'extrudeur depuis les paramètres de l'écran.
 - Lancez une calibration Delta depuis les menus de l'écran.
 - Lancez un auto-nivellement depuis les menus de l'écran.
+
+## Fichiers STL nécessaires :
+
+<img align="left" width="200" src="https://user-images.githubusercontent.com/12702322/147863957-b25b46d0-1ad6-4ef2-b6ff-d6f69259bd86.png" />[TFT70 Case.zip](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798453/TFT70.Case.zip)
+
+<img align="left" width="200" src="https://user-images.githubusercontent.com/12702322/147863965-d4a2b271-5ff7-4fcc-bd89-1e59acba76e0.png" />[Spool Holder.zip](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798455/Spool.Holder.zip)
 
 ## Réglages slicers recommandés :
 
