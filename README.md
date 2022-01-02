@@ -96,6 +96,38 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798455/Spool.Holder.zip">Spool Holder.zip</a>
  </td>
  </tr>
+ <tr>
+ <td>
+ <img align="center" width="300" src="ttps://user-images.githubusercontent.com/12702322/147864172-148c6c74-0a0a-4b37-b48e-9f764aec81ea.png" />
+ </td>
+ <td>
+ <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798458/Filament.Sensor.Mount.zip">Filament Sensor Mount.zip</a>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <img align="center" width="300" src="https://user-images.githubusercontent.com/12702322/147864184-9f01b34d-89e0-404e-83be-e25005486fc4.png" />
+ </td>
+ <td>
+ <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798459/SKR2.Plate.zip">SKR2 Plate.zip</a>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <img align="center" width="300" src="https://user-images.githubusercontent.com/12702322/147864199-9e521abd-4177-4561-bccf-3736aa711f85.png" />
+ </td>
+ <td>
+ <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798461/Cable.Guide.zip">Cable Guide.zip</a>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <img align="center" width="300" src="https://user-images.githubusercontent.com/12702322/147864215-bf53484b-f902-4cf1-828c-6ac3a47dc699.png" />
+ </td>
+ <td>
+ <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798462/Neopixels.Mount.zip">Neopixels Mount.zip</a>
+ </td>
+ </tr>
  </table>
 
 ## Réglages slicers recommandés :
