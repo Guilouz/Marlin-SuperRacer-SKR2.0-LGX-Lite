@@ -43,7 +43,7 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 - Support Bed Leveling Bilinear 9 x 9 points
 - Support M600 & Nozzle Park / Advanced Pause
 - Support Babystepping
-- Support Neopixels (j'utilise cet anneau de LED : [ici](https://fr.aliexpress.com/item/1005002090765807.html?spm=a2g0s.9042311.0.0.56d46c37lqhfaf))
+- Support Neopixels
 - Support EEPROM
 - Support PID Buse & Plateau
 - Support protection thermique contre l'emballement
@@ -143,6 +143,10 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  </td>
  <td>
 - Nécessite des colliers de serrage 2.5mm
+- Nécessite un fer à souder et de l'étain
+- Nécessite du câble 22 AWG (<a href="https://www.amazon.fr/gp/product/B089N4SWC1/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1">Lien</a>)
+- Nécessite un connecteur JST XH 2.54mm 3 pins et une pince à sertir
+- Nécessite un anneau de LED (<a href="https://fr.aliexpress.com/item/1005002090765807.html?spm=a2g0s.9042311.0.0.56d46c37lqhfaf">Lien</a>)
  </td>
  </tr>
  <tr>
