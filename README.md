@@ -3,7 +3,7 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 
  [ ![Download](https://user-images.githubusercontent.com/12702322/115148445-e5a40100-a05f-11eb-8552-c1f5d4355987.png) ](https://www.paypal.me/CyrilGuislain)
 
-**Firmware Marlin configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0 et extrudeur Direct Drive Bondtech LGX Lite**
+**Firmware Marlin configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0 et extrudeur Direct Drive Bondtech LGX Lite (moteur LDO-36STH20-1004AHG(XH))**
 
 <img align="center" width="600" src="https://user-images.githubusercontent.com/12702322/147616087-0f469071-5b6e-46a0-80cc-16946128bd5a.png" />
 
