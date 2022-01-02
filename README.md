@@ -83,17 +83,17 @@ EDIT 06/12/2021 : En raison de la p√©nurie de composants, BigTreeTech utilise d√
 <table border="0">
  <tr>
  <td>
- <img align="left" width="300" src="https://user-images.githubusercontent.com/12702322/147863957-b25b46d0-1ad6-4ef2-b6ff-d6f69259bd86.png" />
+ <img align="center" width="300" src="https://user-images.githubusercontent.com/12702322/147864099-a2f2a4a0-12de-40af-ba38-7aea606a715e.png" />
  </td>
  <td>
- [TFT70 Case.zip](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798453/TFT70.Case.zip)
+ ![TFT70 Case.zip](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798453/TFT70.Case.zip)
  </td>
  <tr>
  <td>
- <img align="left" width="300" src="https://user-images.githubusercontent.com/12702322/147863965-d4a2b271-5ff7-4fcc-bd89-1e59acba76e0.png" />
+ ![Spool Holder](https://user-images.githubusercontent.com/12702322/147864115-b05d29f0-f284-46a6-9b0e-ec12cad83791.png)
  </td>
  <td>
- [Spool Holder.zip](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798455/Spool.Holder.zip)
+ ![Spool Holder.zip](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798455/Spool.Holder.zip)
  </td>
  </tr>
  </table>
