@@ -71,6 +71,7 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 - Lancez une calibration de l'extrudeur depuis les paramètres de l'écran.
 - Lancez une calibration Delta depuis les menus de l'écran.
 - Lancez un auto-nivellement depuis les menus de l'écran.
+- Réglez le Z-Offset depuis les menus de l'écran.
 
 ## Fichiers STL nécessaires :
 
