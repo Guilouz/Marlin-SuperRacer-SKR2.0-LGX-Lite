@@ -278,7 +278,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans pins_MKS_ROBIN_NANO_V3_common.h : `#define FAN_PIN PB1`
     - Dans pins_MKS_ROBIN_NANO_V3_common.h : `#define FAN1_PIN PC14`
 
-Il est également nécessaire de déplacer le branchement des ventilateurs de refroiddisement du port `FAN1` vers le port `FAN2`.
+Il est également nécessaire de déplacer le branchement des ventilateurs de refroidissement du port `FAN1` vers le port `FAN2`.
     
   - Si `SKR 1.3`, définissez ces valeurs :
     - Dans platformio.ini : `default_envs = LPC1768`
