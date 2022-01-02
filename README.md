@@ -85,7 +85,8 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  </td>
  <td>
  - Nécessite 2 vis M3x12 pour fixer l'écran au support<br />
- - Utilisation des vis stock pour le reste
+ - Nécessite 2 écrous M3 pour fixer l'écran au support<br />
+ - Utilisation des vis stock pour fixer le support
  </td>
  <tr>
  <td>
@@ -96,7 +97,7 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  </td>
  <td>
  - Nécessite 4 vis M3x18<br />
- - Nécessite 4 roulements à bille 608ZZ
+ - Nécessite 4 roulements à billes 608ZZ
  </td>
  </tr>
  <tr>
@@ -106,6 +107,9 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  <td>
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798458/Filament.Sensor.Mount.zip">Filament Sensor Mount.zip</a>
  </td>
+ <td>
+- Utilisation des vis stock
+ </td>
  </tr>
  <tr>
  <td>
@@ -113,6 +117,10 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  </td>
  <td>
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798459/SKR2.Plate.zip">SKR2 Plate.zip</a>
+ </td>
+ <td>
+- Découpe nécessaire dans le chassîs<br />
+- Plaque à coller sur le chassîs
  </td>
  </tr>
  <tr>
@@ -122,6 +130,9 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  <td>
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798461/Cable.Guide.zip">Cable Guide.zip</a>
  </td>
+ <td>
+- N/A
+ </td>
  </tr>
  <tr>
  <td>
@@ -130,6 +141,9 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  <td>
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798462/Neopixels.Mount.zip">Neopixels Mount.zip</a>
  </td>
+ <td>
+- Nécessite des colliers de serrage
+ </td>
  </tr>
  <tr>
  <td>
@@ -137,6 +151,10 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  </td>
  <td>
  <a href="https://www.thingiverse.com/thing:5138588">LGX Lite Support</a>
+ </td>
+ <td>
+ - Nécessite 2 vis M3x12 pour fixer le LGX Lite au support<br />
+ - Utilisation des vis stock pour fixer l'ensemble
  </td>
  </tr>
  </table>
