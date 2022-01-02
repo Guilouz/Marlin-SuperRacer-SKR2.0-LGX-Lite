@@ -119,8 +119,8 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798459/SKR2.Plate.zip">SKR2 Plate.zip</a>
  </td>
  <td>
-- Découpe nécessaire dans le chassîs<br />
-- Plaque à coller sur le chassîs
+- Découpe nécessaire dans le châssis<br />
+- Plaque à coller sur le châssis
  </td>
  </tr>
  <tr>
