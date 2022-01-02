@@ -128,6 +128,14 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798462/Neopixels.Mount.zip">Neopixels Mount.zip</a>
  </td>
  </tr>
+ <tr>
+ <td>
+ <img align="center" width="300" src="https://user-images.githubusercontent.com/12702322/147864318-2e3b7b31-d254-4b6c-aa89-7d291fbb63d6.png" />
+ </td>
+ <td>
+ <a href="https://www.thingiverse.com/thing:5138588">LGX Lite Support</a>
+ </td>
+ </tr>
  </table>
 
 ## Réglages slicers recommandés :
