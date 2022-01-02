@@ -38,7 +38,7 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
 
 - Support carte mère BigTreeTech SKR 2.0
 - Support extrudeur Direct Drive Bondtech LGX Lite
-- Support drivers TMC2209/TMC2226 UART
+- Support drivers TMC2209/TMC2226 configurés en UART
 - Support écrans BigTreeTech
 - Support Bed Leveling Bilinear 9 x 9 points
 - Support M600 & Nozzle Park / Advanced Pause
