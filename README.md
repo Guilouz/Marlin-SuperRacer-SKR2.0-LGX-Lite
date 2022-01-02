@@ -84,7 +84,7 @@ EDIT 06/12/2021 : En raison de la pénurie de composants, BigTreeTech utilise d�
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798453/TFT70.Case.zip">TFT70 Case.zip</a>
  </td>
  <td>
- - Nécessite 2 vis M3x12 pour fixer l'écran au support
+ - Nécessite 2 vis M3x12 pour fixer l'écran au support<br />
  - Utilisation des vis stock pour le reste
  </td>
  <tr>
