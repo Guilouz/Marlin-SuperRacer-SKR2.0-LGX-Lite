@@ -74,17 +74,16 @@ default_envs = BIGTREE_SKR_2_F429
 
 ## Procédure d'installation :
 
-- Effectuez un reset EEPROM avant flash du nouveau firmware (commande M502 suivi de la commande M500 ou via l'écran TFT).
 - Copiez le fichier `firmware.bin` à la racine de la carte microSD (capacité max de 32Go, formatée en FAT32, taille d'unité d'allocation 4096).
 - Imprimante éteinte, insérez la carte microSD dans le port dédié sur la carte mère et allumez l'imprimante.
 - La procédure de flash démarre (sans rien afficher à l'écran) et dure quelques secondes.
 - Vérifiez le contenu de la carte microSD, le fichier `firmware.bin` a été renommé en `FIRMWARE.CUR` ce qui indique que le flash s'est bien déroulé.
-- Effectuez de nouveau un reset EEPROM (commande M502 suivi de la commande M500 ou via l'écran TFT).
-- Lancez un PID Buse & Plateau depuis les paramètres de l'écran.
-- Lancez une calibration de l'extrudeur depuis les paramètres de l'écran.
-- Lancez une calibration Delta depuis les menus de l'écran.
-- Lancez un auto-nivellement depuis les menus de l'écran.
-- Réglez le Z-Offset depuis les menus de l'écran.
+- Effectuez un reset EEPROM via `Menu` / `Options` / `Machine` / `EEPROM` / `Reset`.
+- Lancez un PID Buse & Plateau via `Menu` / `Options` / `Machine` / `Tuning` / `PID`.
+- Lancez une calibration de l'extrudeur via `Menu` / `Options` / `Machine` / `Tuning` / `Extrudeur`.
+- Lancez une calibration Delta via `Menu` / `Calibrer`.
+- Lancez un auto-nivellement via `Menu` / `Mouvement` / `ABL` / `Démarrer`.
+- Réglez le Z-Offset via `Menu` / `Mouvement` / `ABL` / `Z-Offset`.
 
 ## Fichiers STL et matériels nécessaires :
 
