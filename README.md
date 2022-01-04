@@ -97,6 +97,7 @@ default_envs = BIGTREE_SKR_2_F429
  <a href="https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/7798453/TFT70.Case.zip">TFT70 Case.zip</a>
  </td>
  <td>
+ - Nécessite 4 vis M3x18 pour fixer la face avant et arrière de l'écran
  - Nécessite 2 vis M3x12 pour fixer l'écran au support<br />
  - Nécessite 2 écrous M3 pour fixer l'écran au support<br />
  - Utilisation des vis stock pour fixer le support
