@@ -172,7 +172,8 @@ default_envs = BIGTREE_SKR_2_F429
  </td>
  <td>
  - Nécessite 2 vis M3x12 pour fixer le LGX Lite au support<br />
- - Utilisation des vis stock pour fixer l'ensemble
+ - Utilisation des vis stock pour fixer l'ensemble<br />
+ - 2 ventilateurs 5015 (optionnels)
  </td>
  </tr>
  </table>
