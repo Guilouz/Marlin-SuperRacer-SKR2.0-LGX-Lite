@@ -268,7 +268,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans platformio.ini : `default_envs = mks_robin_nano_v3`
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_MKS_ROBIN_NANO_V3`
     - Dans Configuration.h : `#define SERIAL_PORT -1`
-    - Dans Configuration.h : `#define SERIAL_PORT_2 1`
+    - Dans Configuration.h : `#define SERIAL_PORT_2 3`
     - Dans Configuration.h : `#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN`
     - Dans Configuration.h : `//#define Z_MIN_PROBE_PIN PA0`
     - Dans Configuration.h : `//#define NEOPIXEL_LED`
@@ -282,6 +282,8 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans pins_MKS_ROBIN_NANO_V3_common.h : `#define FAN1_PIN PC14`
 
 Il est également nécessaire de déplacer le branchement des ventilateurs de refroidissement du port `FAN1` vers le port `FAN2`.
+
+Un pack complet avec firmwares est disponible <a href="https://drive.google.com/file/d/1qiMYBQkulEuOpUn5UmmUM7sLWNKS4bEW/view?usp=sharing">ici</a>
     
   - Si `SKR 1.3`, définissez ces valeurs :
     - Dans platformio.ini : `default_envs = LPC1768`
