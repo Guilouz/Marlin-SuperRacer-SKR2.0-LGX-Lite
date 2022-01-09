@@ -152,9 +152,11 @@ namespace Language_fr {
   LSTR MSG_BED_TRAMMING_LAST_Z            = _UxGT("Dernier Z: ");
   LSTR MSG_NEXT_CORNER                    = _UxGT("Coin suivant");
   LSTR MSG_MESH_EDITOR                    = _UxGT("Modif. maille"); // 13 car. max
+  LSTR MSG_MESH_VIEWER                    = _UxGT("Visualiser maillage");
   LSTR MSG_EDIT_MESH                      = _UxGT("Editer le maillage");
   LSTR MSG_MESH_VIEW                      = _UxGT("Voir le maillage");
   LSTR MSG_EDITING_STOPPED                = _UxGT("Modification arrêtée");
+  LSTR MSG_NO_VALID_MESH                  = _UxGT("Pas de maillage valide");
   LSTR MSG_PROBING_POINT                  = _UxGT("Mesure point");
   LSTR MSG_MESH_X                         = _UxGT("Index X");
   LSTR MSG_MESH_Y                         = _UxGT("Index Y");
@@ -432,6 +434,7 @@ namespace Language_fr {
   LSTR MSG_BUTTON_ADVANCED                = _UxGT("Avancé");
   LSTR MSG_PAUSING                        = _UxGT("Mise en pause...");
   LSTR MSG_PAUSE_PRINT                    = _UxGT("Pause impression");
+  LSTR MSG_ADVANCED_PAUSE                 = _UxGT("Pause avancée");
   LSTR MSG_RESUME_PRINT                   = _UxGT("Reprendre impr.");
   LSTR MSG_HOST_START_PRINT               = _UxGT("Démarrer l'impression via l'hôte");
   LSTR MSG_STOP_PRINT                     = _UxGT("Arrêter impr.");
@@ -440,12 +443,14 @@ namespace Language_fr {
   LSTR MSG_CANCEL_OBJECT                  = _UxGT("Annuler objet");
   LSTR MSG_CANCEL_OBJECT_N                = _UxGT("Annuler objet =");
   LSTR MSG_OUTAGE_RECOVERY                = _UxGT("Récup. coup.");
+  LSTR MSG_CONTINUE_PRINT_JOB             = _UxGT("Continuer Impression");
   LSTR MSG_MEDIA_MENU                     = _UxGT("Impression SD");
   LSTR MSG_NO_MEDIA                       = _UxGT("Pas de média");
   LSTR MSG_DWELL                          = _UxGT("Repos...");
   LSTR MSG_USERWAIT                       = _UxGT("Attente utilis.");
   LSTR MSG_PRINT_PAUSED                   = _UxGT("Impr. en pause");
-  LSTR MSG_PRINTING                       = _UxGT("Impression");
+  LSTR MSG_PRINTING                       = _UxGT("Impression...");
+  LSTR MSG_STOPPING                       = _UxGT("Annulation...");
   LSTR MSG_PRINT_ABORTED                  = _UxGT("Impr. annulée");
   LSTR MSG_PRINT_DONE                     = _UxGT("Impression terminée");
   LSTR MSG_NO_MOVE                        = _UxGT("Moteurs bloqués");
@@ -528,6 +533,7 @@ namespace Language_fr {
   LSTR MSG_HEATING_FAILED_LCD             = _UxGT("Erreur de chauffe");
   LSTR MSG_ERR_REDUNDANT_TEMP             = _UxGT("Erreur Température redondante");
   LSTR MSG_THERMAL_RUNAWAY                = _UxGT("Erreur Thermique");
+  LSTR MSG_TEMP_MALFUNCTION               = _UxGT("DYSFONCTIONNEMENT DE LA TEMPÉRATURE");
   LSTR MSG_THERMAL_RUNAWAY_BED            = _UxGT("Erreur Thermique du plateau");
   LSTR MSG_THERMAL_RUNAWAY_CHAMBER        = _UxGT("Erreur Thermique de la chambre");
   LSTR MSG_THERMAL_RUNAWAY_COOLER         = _UxGT("Emballement du refroidisseur");
@@ -535,6 +541,7 @@ namespace Language_fr {
   LSTR MSG_ERR_MAXTEMP                    = _UxGT("Erreur MAXTEMP");
   LSTR MSG_ERR_MINTEMP                    = _UxGT("Erreur MINTEMP");
   LSTR MSG_HALTED                         = _UxGT("IMPRIMANTE ARRÊTÉE");
+  LSTR MSG_PLEASE_WAIT                    = _UxGT("Veuillez patienter...");
   LSTR MSG_PLEASE_RESET                   = _UxGT("Veuillez réinitialiser");
   LSTR MSG_PREHEATING                     = _UxGT("Préchauffage...");
   LSTR MSG_HEATING                        = _UxGT("en chauffe...");
@@ -582,20 +589,35 @@ namespace Language_fr {
   LSTR MSG_KILL_EXPECTED_PRINTER          = _UxGT("Imprimante incorrecte");
 
   #if LCD_WIDTH >= 20 || HAS_DWIN_E3V2
-    LSTR MSG_INFO_PRINT_COUNT_RESET       = _UxGT("Réinitialiser le nombre d'impressions");
+    LSTR MSG_MEDIA_NOT_INSERTED           = _UxGT("No media inserted.");
+    LSTR MSG_REMAINING_TIME               = _UxGT("Remaining time");
+    LSTR MSG_PLEASE_WAIT_REBOOT           = _UxGT("Please wait until reboot. ");
+    LSTR MSG_PLEASE_PREHEAT               = _UxGT("Please preheat the hot end.");
+    LSTR MSG_INFO_PRINT_COUNT_RESET       = _UxGT("éinitialiser le nombre d'impressions");
     LSTR MSG_INFO_PRINT_COUNT             = _UxGT("Nbre impressions");
-    LSTR MSG_INFO_COMPLETED_PRINTS        = _UxGT("Terminées");
     LSTR MSG_INFO_PRINT_TIME              = _UxGT("Tps impr. total");
     LSTR MSG_INFO_PRINT_LONGEST           = _UxGT("Impr. la + longue");
     LSTR MSG_INFO_PRINT_FILAMENT          = _UxGT("Total filament");
+    LSTR MSG_COLORS_GET                   = _UxGT("Obtenir couleur");
+    LSTR MSG_COLORS_SELECT                = _UxGT("Sélectionner couleurs");
+    LSTR MSG_COLORS_APPLIED               = _UxGT("Couleurs appliquées");
+    LSTR MSG_COLORS_RED                   = _UxGT("Rouge");
+    LSTR MSG_COLORS_GREEN                 = _UxGT("Vert");
+    LSTR MSG_COLORS_BLUE                  = _UxGT("Bleu");
+    LSTR MSG_UI_LANGUAGE                  = _UxGT("Langue UI");
+    LSTR MSG_SOUND_ENABLE                 = _UxGT("Activer son");
+    LSTR MSG_LOCKSCREEN                   = _UxGT("Verrouiler écran");
   #else
+    LSTR MSG_MEDIA_NOT_INSERTED           = _UxGT("Aucun média");
+    LSTR MSG_PLEASE_PREHEAT               = _UxGT("Veuillez préchauffer");
     LSTR MSG_INFO_PRINT_COUNT             = _UxGT("Impressions");
-    LSTR MSG_INFO_COMPLETED_PRINTS        = _UxGT("Terminées");
+    LSTR MSG_REMAINING_TIME               = _UxGT("Restant");
     LSTR MSG_INFO_PRINT_TIME              = _UxGT("Total");
-    LSTR MSG_INFO_PRINT_LONGEST           = _UxGT("+ long");
-    LSTR MSG_INFO_PRINT_FILAMENT          = _UxGT("Filament");
+    LSTR MSG_INFO_PRINT_LONGEST           = _UxGT("La plus longue");
+    LSTR MSG_INFO_PRINT_FILAMENT          = _UxGT("Total filament");
   #endif
 
+  LSTR MSG_INFO_COMPLETED_PRINTS          = _UxGT("Terminés");
   LSTR MSG_INFO_MIN_TEMP                  = _UxGT("Temp Min");
   LSTR MSG_INFO_MAX_TEMP                  = _UxGT("Temp Max");
   LSTR MSG_INFO_PSU                       = _UxGT("Alim.");
