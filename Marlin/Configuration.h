@@ -605,9 +605,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  20.7852
-    #define DEFAULT_Ki   1.7869
-    #define DEFAULT_Kd 60.4433
+    #define DEFAULT_Kp  19.2698
+    #define DEFAULT_Ki   1.3929
+    #define DEFAULT_Kd 66.6447
   #endif
 #endif // PIDTEMP
 
@@ -646,9 +646,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 111.12
-  #define DEFAULT_bedKi 22.05
-  #define DEFAULT_bedKd 373.36
+  #define DEFAULT_bedKp 106.5601
+  #define DEFAULT_bedKi 20.5199
+  #define DEFAULT_bedKd 368.9111
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -816,17 +816,17 @@
   #define DELTA_DIAGONAL_ROD 315       // (mm)
 
   // Distance between bed and nozzle Z home position
-  #define DELTA_HEIGHT 320.0683            // (mm) Get this value from G33 auto calibrate
+  #define DELTA_HEIGHT 330            // (mm) Get this value from G33 auto calibrate
 
-  #define DELTA_ENDSTOP_ADJ { 0.0, -1.3794, -0.7676 } // Get these values from G33 auto calibrate
+  #define DELTA_ENDSTOP_ADJ { 0.0, 0.0, 0.0 } // Get these values from G33 auto calibrate
 
   // Horizontal distance bridged by diagonal push rods when effector is centered.
-  #define DELTA_RADIUS 151.4469              // (mm) Get this value from G33 auto calibrate
+  #define DELTA_RADIUS 152              // (mm) Get this value from G33 auto calibrate
 
   // Trim adjustments for individual towers
   // tower angle corrections for X and Y tower / rotate XYZ so Z tower angle = 0
   // measured in degrees anticlockwise looking from above the printer
-  #define DELTA_TOWER_ANGLE_TRIM { 0.0026, -0.0035, 0.0009 } // Get these values from G33 auto calibrate
+  #define DELTA_TOWER_ANGLE_TRIM { 0.0000, 0.0000, 0.0000 } // Get these values from G33 auto calibrate
 
   // Delta radius and diagonal rod adjustments (mm)
   //#define DELTA_RADIUS_TRIM_TOWER { 0.0, 0.0, 0.0 }
@@ -994,7 +994,7 @@
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
 #define DEFAULT_XYZ_STEPS_PER_UNIT 80
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 573.47 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 572.90 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1029,7 +1029,7 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          2800    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          2500    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  2800    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   2800    // X, Y, Z acceleration for travel (non printing) moves
 
@@ -1043,9 +1043,9 @@
  */
 #define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
-  #define DEFAULT_XJERK 20.0
-  #define DEFAULT_YJERK 20.0
-  #define DEFAULT_ZJERK  20.0
+  #define DEFAULT_XJERK 10.0
+  #define DEFAULT_YJERK 10.0
+  #define DEFAULT_ZJERK  10.0
   //#define DEFAULT_IJERK  0.3
   //#define DEFAULT_JJERK  0.3
   //#define DEFAULT_KJERK  0.3
@@ -1465,7 +1465,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS 132
 #define Y_MAX_POS 132
-#define Z_MAX_POS 320
+#define Z_MAX_POS 330
 //#define I_MIN_POS 0
 //#define I_MAX_POS 0
 //#define J_MIN_POS 0
@@ -1662,7 +1662,7 @@
   // The height can be set with M420 Z<height>
   #define ENABLE_LEVELING_FADE_HEIGHT
   #if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
-    #define DEFAULT_LEVELING_FADE_HEIGHT 320.0 // (mm) Default fade height.
+    #define DEFAULT_LEVELING_FADE_HEIGHT 330.0 // (mm) Default fade height.
   #endif
 
   // For Cartesian machines, instead of dividing moves on mesh boundaries,
@@ -1812,7 +1812,7 @@
 // For DELTA this is the top-center of the Cartesian print volume.
 //#define MANUAL_X_HOME_POS 0
 //#define MANUAL_Y_HOME_POS 0
-#define MANUAL_Z_HOME_POS 320
+#define MANUAL_Z_HOME_POS 330
 //#define MANUAL_I_HOME_POS 0
 //#define MANUAL_J_HOME_POS 0
 //#define MANUAL_K_HOME_POS 0

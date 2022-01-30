@@ -31,7 +31,7 @@
 #include "../../module/planner.h" // for synchronize()
 #include "../../MarlinCore.h"     // for wait_for_user_response()
 
-#if HAS_LCD_MENU
+#if HAS_MARLINUI_MENU
   #include "../../lcd/marlinui.h"
 #elif ENABLED(EXTENSIBLE_UI)
   #include "../../lcd/extui/ui_api.h"
@@ -48,14 +48,14 @@
  * M0: Unconditional stop - Wait for user button press on LCD
  * M1: Conditional stop   - Wait for user button press on LCD
  */
-/*void GcodeSuite::M0_M1() {
+void GcodeSuite::M0_M1() {
   millis_t ms = 0;
   if (parser.seenval('P')) ms = parser.value_millis();              // Milliseconds to wait
   if (parser.seenval('S')) ms = parser.value_millis_from_seconds(); // Seconds to wait
 
   planner.synchronize();
 
-  #if HAS_LCD_MENU
+  #if HAS_MARLINUI_MENU
 
     if (parser.string_arg)
       ui.set_status(parser.string_arg, true);
@@ -89,7 +89,7 @@
 
   TERN_(HAS_RESUME_CONTINUE, wait_for_user_response(ms));
 
-  TERN_(HAS_LCD_MENU, ui.reset_status());
-}*/
+  TERN_(HAS_MARLINUI_MENU, ui.reset_status());
+}
 
 #endif // HAS_RESUME_CONTINUE
