@@ -44,7 +44,7 @@ default_envs = BIGTREE_SKR_2_F429
 
 ## Schema de câblage :
 
-![FLSUN SuperRacer SKR2](https://user-images.githubusercontent.com/12702322/128229118-0e99d567-2a6f-4fc2-8bfe-600c4e845f50.png)
+![FLSUN SuperRacer SKR2](https://user-images.githubusercontent.com/12702322/151848555-937b39b6-6403-4150-b1cc-00e069bca8de.png)
 
 ![Capture d’écran 2021-12-08 à 00 44 42](https://user-images.githubusercontent.com/12702322/145123450-537eda9a-34b1-428f-9799-957fa6c3db11.jpg)
 
