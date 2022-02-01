@@ -82,7 +82,7 @@ default_envs = BIGTREE_SKR_2_F429
 - Effectuez un reset EEPROM via `Menu` / `Options` / `Machine` / `EEPROM` / `Reset`.
 - Lancez un PID Buse & Plateau via `Menu` / `Options` / `Machine` / `Tuning` / `PID`.
 - Lancez une calibration de l'extrudeur via `Menu` / `Options` / `Machine` / `Tuning` / `Extrudeur`.
-- Lancez une calibration Delta via `Menu` / `Calibrer`.
+- Lancez une calibration Delta via `Menu` / `Mouvement` / `Calibrer`.
 - Lancez un auto-nivellement via `Menu` / `Mouvement` / `ABL` / `Démarrer`.
 - Réglez le Z-Offset via `Menu` / `Mouvement` / `ABL` / `Z-Offset`.
 
