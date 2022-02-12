@@ -17,7 +17,7 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 
 ## Téléchargement
 
-**Package disponible dans la section [Releases](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/releases).**
+**Firmware disponible [ici](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/releases).**
 
 Le firmware pour écran BigTreeTech TFT70 3.0 est disponible [ici](https://github.com/Guilouz/BTT-TFT70-SuperRacer).
 
