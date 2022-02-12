@@ -5,8 +5,6 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 
 **Firmware Marlin configuré pour FLSUN Super Racer avec carte mère BigTreeTech SRK 2.0 et extrudeur Direct Drive Bondtech LGX Lite (moteur LDO-36STH20-1004AHG(XH))**<br />
 
-## Téléchargement
-**Disponible dans la section [Releases](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/releases).**
 
 <img align="center" width="600" src="https://user-images.githubusercontent.com/12702322/147616087-0f469071-5b6e-46a0-80cc-16946128bd5a.png" />
 
@@ -16,6 +14,10 @@ Si vous aimez mon travail, n'hésitez pas à me soutenir en me payant une 🍺 o
 <img align="center" width="600" src="https://user-images.githubusercontent.com/12702322/147516889-67b58b86-4929-4c54-921e-f4cf3d9b31af.png" />
 
 <br />
+
+## Téléchargement
+
+**Package disponible dans la section [Releases](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/releases).**
 
 Le firmware pour écran BigTreeTech TFT70 3.0 est disponible [ici](https://github.com/Guilouz/BTT-TFT70-SuperRacer).
 
