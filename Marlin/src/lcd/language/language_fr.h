@@ -604,6 +604,7 @@ namespace Language_fr {
     LSTR MSG_COLORS_RED                   = _UxGT("Rouge");
     LSTR MSG_COLORS_GREEN                 = _UxGT("Vert");
     LSTR MSG_COLORS_BLUE                  = _UxGT("Bleu");
+    LSTR MSG_COLORS_WHITE                 = _UxGT("Blanc");
     LSTR MSG_UI_LANGUAGE                  = _UxGT("Langue UI");
     LSTR MSG_SOUND_ENABLE                 = _UxGT("Activer son");
     LSTR MSG_LOCKSCREEN                   = _UxGT("Verrouiler écran");
