@@ -67,6 +67,8 @@ default_envs = BIGTREE_SKR_2_F429
 - Support protection thermique contre l'emballement
 - Support S-Curve Acceleration
 - Support de la compensation d'inclinaison du plateau (https://www.thingiverse.com/thing:2563185)
+- Support de l'ajustement Delta Diagonal Rod Trim
+- Support du Multi Volumes (ports microSD et USB fonctionnels)
 - Support G26 - Mesh Validation Pattern
 - Support G33 - Delta Auto Calibration
 - Support du transfert de fichier binaire (transfert du fichier firmware à distance via Octoprint)
@@ -89,6 +91,8 @@ default_envs = BIGTREE_SKR_2_F429
 - Lancez une calibration Delta via `Menu` / `Mouvement` / `Calibrer`.
 - Lancez un auto-nivellement via `Menu` / `Mouvement` / `ABL` / `Démarrer`.
 - Réglez le Z-Offset via `Menu` / `Mouvement` / `ABL` / `Z-Offset`.
+- Si vous voulez plus de précision ou régler des problèmes de cotes, suivez les instructions de ce fichier Excel : [Delta Calibration Calculator.zip](https://github.com/Guilouz/Marlin-SuperRacer-SKR2.0-LGX-Lite/files/8146625/Delta.Calibration.Calculator.zip)
+
 
 ## Fichiers STL et matériels nécessaires :
 
