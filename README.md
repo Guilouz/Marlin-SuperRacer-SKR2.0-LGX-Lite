@@ -237,14 +237,6 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
   - Pour changer la langue de Marlin en anglais, définissez cette valeur :
     - Dans Configuration.h : `#define LCD_LANGUAGE en`
 
-  - Si vous voulez utiliser le port `microSD`, définissez ces valeurs :
-    - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
-    - Dans Configuration_adv.h : `//#define USE_OTG_USB_HOST`
-
-  - Si vous voulez utiliser le port `USB`, définissez ces valeurs :
-    - Dans Configuration_adv.h : `#define USB_FLASH_DRIVE_SUPPORT`
-    - Dans Configuration_adv.h : `#define USE_OTG_USB_HOST`
-
   - Si `EXTRUDEUR FLSUN STOCK / BONDTECH BMG (BOWDEN)`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR true`
