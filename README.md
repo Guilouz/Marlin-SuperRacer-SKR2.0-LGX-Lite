@@ -299,6 +299,7 @@ Un pack complet avec firmwares est disponible <a href="https://drive.google.com/
     - Dans Configuration.h : `//#define Z_MIN_PROBE_PIN PA0`
     - Dans Configuration.h : `//#define NEOPIXEL_LED`
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
+    - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
@@ -310,6 +311,7 @@ Un pack complet avec firmwares est disponible <a href="https://drive.google.com/
     - Dans Configuration.h : `#define Z_MIN_PROBE_PIN P1_25` Le palpeur doit être branché sur le port E1DET
     - Dans Configuration.h : `//#define NEOPIXEL_LED`
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
+    - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
@@ -320,6 +322,7 @@ Un pack complet avec firmwares est disponible <a href="https://drive.google.com/
     - Dans Configuration.h : `#define SERIAL_PORT_2 0`
     - Dans Configuration.h : `#define Z_MIN_PROBE_PIN P1_25` Le palpeur doit être branché sur le port E1DET
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
+    - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
