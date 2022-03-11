@@ -205,7 +205,7 @@ default_envs = BIGTREE_SKR_2_F429
 `G1 Z150`<br />
 `G1 X-130 Y0 Z0.4 F3000`<br />
 `; Extrude environ 40mm en imprimant un arc de 90 degrés`<br />
-`G3 X0 Y-130 I130 Z0.3 E40 F2700`<br />
+`G3 X0 Y-130 I130 Z0.3 E40 F2000`<br />
 `; Rétraction et déplacement de la hotend vers le haut`<br />
 `G92 E0`<br />
 `G1 E-1.5 F1800`<br />
