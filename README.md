@@ -237,14 +237,6 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
   - Pour changer la langue de Marlin en anglais, définissez cette valeur :
     - Dans Configuration.h : `#define LCD_LANGUAGE en`
 
-  - Si vous voulez utiliser le port `microSD`, définissez ces valeurs :
-    - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
-    - Dans Configuration_adv.h : `//#define USE_OTG_USB_HOST`
-
-  - Si vous voulez utiliser le port `USB`, définissez ces valeurs :
-    - Dans Configuration_adv.h : `#define USB_FLASH_DRIVE_SUPPORT`
-    - Dans Configuration_adv.h : `#define USE_OTG_USB_HOST`
-
   - Si `EXTRUDEUR FLSUN STOCK / BONDTECH BMG (BOWDEN)`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR true`
@@ -274,7 +266,7 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans Configuration_adv.h : `#define FILAMENT_CHANGE_FAST_LOAD_LENGTH     70`
 
   - Si `MKS ROBIN NANO V3`, définissez ces valeurs :
-    - Dans platformio.ini : `default_envs = mks_robin_nano_v3`
+    - Dans platformio.ini : `default_envs = mks_robin_nano_v3_usb_flash_drive_msc`
     - Dans Configuration.h : `#define MOTHERBOARD BOARD_MKS_ROBIN_NANO_V3`
     - Dans Configuration.h : `#define SERIAL_PORT -1`
     - Dans Configuration.h : `#define SERIAL_PORT_2 3`
@@ -282,10 +274,6 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
     - Dans Configuration.h : `//#define Z_MIN_PROBE_PIN PA0`
     - Dans Configuration.h : `//#define NEOPIXEL_LED`
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN PB0`
-    - Dans Configuration_adv.h : `//#define LED_CONTROL_MENU`
-    - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT` pour utiliser le port microSD
-    - Dans Configuration_adv.h : `#define USB_FLASH_DRIVE_SUPPORT` pour utiliser le port USB
-    - Dans Configuration_adv.h : `#define USE_OTG_USB_HOST` pour utiliser le port USB
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     - Dans pins_MKS_ROBIN_NANO_V3_common.h : `#define FAN_PIN PB1`
     - Dans pins_MKS_ROBIN_NANO_V3_common.h : `#define FAN1_PIN PC14`
@@ -303,7 +291,7 @@ Un pack complet avec firmwares est disponible <a href="https://drive.google.com/
     - Dans Configuration.h : `//#define Z_MIN_PROBE_PIN PA0`
     - Dans Configuration.h : `//#define NEOPIXEL_LED`
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
-    - Dans Configuration_adv.h : `//#define LED_CONTROL_MENU`
+    - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
@@ -315,7 +303,7 @@ Un pack complet avec firmwares est disponible <a href="https://drive.google.com/
     - Dans Configuration.h : `#define Z_MIN_PROBE_PIN P1_25` Le palpeur doit être branché sur le port E1DET
     - Dans Configuration.h : `//#define NEOPIXEL_LED`
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
-    - Dans Configuration_adv.h : `//#define LED_CONTROL_MENU`
+    - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
@@ -326,6 +314,7 @@ Un pack complet avec firmwares est disponible <a href="https://drive.google.com/
     - Dans Configuration.h : `#define SERIAL_PORT_2 0`
     - Dans Configuration.h : `#define Z_MIN_PROBE_PIN P1_25` Le palpeur doit être branché sur le port E1DET
     - Dans Configuration_adv.h : `#define E0_AUTO_FAN_PIN P2_04`
+    - Dans Configuration_adv.h : `//#define MULTI_VOLUME`
     - Dans Configuration_adv.h : `//#define USB_FLASH_DRIVE_SUPPORT`
     - Dans Configuration_adv.h : `#define DISABLE_DRIVER_SAFE_POWER_PROTECT`
     
