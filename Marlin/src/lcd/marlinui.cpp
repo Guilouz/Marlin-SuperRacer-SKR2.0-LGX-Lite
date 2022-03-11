@@ -47,7 +47,7 @@ MarlinUI ui;
 
 #if ENABLED(DWIN_CREALITY_LCD)
   #include "e3v2/creality/dwin.h"
-#elif ENABLED(DWIN_CREALITY_LCD_ENHANCED)
+#elif ENABLED(DWIN_LCD_PROUI)
   #include "fontutils.h"
   #include "e3v2/proui/dwin.h"
 #elif ENABLED(DWIN_CREALITY_LCD_JYERSUI)
@@ -69,7 +69,7 @@ MarlinUI ui;
 constexpr uint8_t epps = ENCODER_PULSES_PER_STEP;
 
 #if HAS_STATUS_MESSAGE
-  #if ENABLED(STATUS_MESSAGE_SCROLLING) && EITHER(HAS_WIRED_LCD, DWIN_CREALITY_LCD_ENHANCED)
+  #if ENABLED(STATUS_MESSAGE_SCROLLING) && EITHER(HAS_WIRED_LCD, DWIN_LCD_PROUI)
     uint8_t MarlinUI::status_scroll_offset; // = 0
   #endif
   char MarlinUI::status_message[MAX_MESSAGE_LENGTH + 1];
@@ -178,6 +178,15 @@ constexpr uint8_t epps = ENCODER_PULSES_PER_STEP;
 #if HAS_ENCODER_ACTION
   uint32_t MarlinUI::encoderPosition;
   volatile int8_t encoderDiff; // Updated in update_buttons, added to encoderPosition every LCD update
+#endif
+
+#if LCD_BACKLIGHT_TIMEOUT
+  uint16_t MarlinUI::lcd_backlight_timeout; // Initialized by settings.load()
+  millis_t MarlinUI::backlight_off_ms = 0;
+  void MarlinUI::refresh_backlight_timeout() {
+    backlight_off_ms = lcd_backlight_timeout ? millis() + lcd_backlight_timeout * 1000UL : 0;
+    WRITE(LCD_BACKLIGHT_PIN, HIGH);
+  }
 #endif
 
 void MarlinUI::init() {
@@ -1033,14 +1042,18 @@ void MarlinUI::init() {
 
           reset_status_timeout(ms);
 
+          #if LCD_BACKLIGHT_TIMEOUT
+            refresh_backlight_timeout();
+          #endif
+
           refresh(LCDVIEW_REDRAW_NOW);
 
           #if LED_POWEROFF_TIMEOUT > 0
             if (!powerManager.psu_on) leds.reset_timeout(ms);
           #endif
-        }
+        } // encoder activity
 
-      #endif
+      #endif // HAS_ENCODER_ACTION
 
       // This runs every ~100ms when idling often enough.
       // Instead of tracking changes just redraw the Status Screen once per second.
@@ -1135,6 +1148,13 @@ void MarlinUI::init() {
           reset_status_timeout(ms);
         else if (ELAPSED(ms, return_to_status_ms))
           return_to_status();
+      #endif
+
+      #if LCD_BACKLIGHT_TIMEOUT
+        if (backlight_off_ms && ELAPSED(ms, backlight_off_ms)) {
+          WRITE(LCD_BACKLIGHT_PIN, LOW); // Backlight off
+          backlight_off_ms = 0;
+        }
       #endif
 
       // Change state of drawing flag between screen updates
@@ -1502,13 +1522,13 @@ void MarlinUI::init() {
 
     #endif
 
-    #if ENABLED(STATUS_MESSAGE_SCROLLING) && EITHER(HAS_WIRED_LCD, DWIN_CREALITY_LCD_ENHANCED)
+    #if ENABLED(STATUS_MESSAGE_SCROLLING) && EITHER(HAS_WIRED_LCD, DWIN_LCD_PROUI)
       status_scroll_offset = 0;
     #endif
 
     TERN_(EXTENSIBLE_UI, ExtUI::onStatusChanged(status_message));
     TERN_(DWIN_CREALITY_LCD, DWIN_StatusChanged(status_message));
-    TERN_(DWIN_CREALITY_LCD_ENHANCED, DWIN_CheckStatusMessage());
+    TERN_(DWIN_LCD_PROUI, DWIN_CheckStatusMessage());
     TERN_(DWIN_CREALITY_LCD_JYERSUI, CrealityDWIN.Update_Status(status_message));
   }
 

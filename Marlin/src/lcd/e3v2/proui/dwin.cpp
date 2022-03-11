@@ -31,7 +31,7 @@
 
 #include "../../../inc/MarlinConfigPre.h"
 
-#if ENABLED(DWIN_CREALITY_LCD_ENHANCED)
+#if ENABLED(DWIN_LCD_PROUI)
 
 #include "dwin.h"
 #include "dwin_popup.h"
@@ -1836,6 +1836,7 @@ void DWIN_Startup() {
   DWINUI::onCursorErase = Erase_Menu_Cursor;
   DWINUI::onTitleDraw = Draw_Title;
   DWINUI::onMenuDraw = Draw_Menu;
+  DWIN_JPG_ShowAndCache(3);
   HMI_SetLanguage();
 }
 
@@ -1937,6 +1938,7 @@ void DWIN_RebootScreen() {
   DWINUI::Draw_CenteredString(Color_White, 220, GET_TEXT_F(MSG_PLEASE_WAIT_REBOOT));
   DWIN_UpdateLCD();
   delay(500);
+  DWIN_JPG_ShowAndCache(3);
 }
 
 void DWIN_Redraw_screen() {
@@ -3972,4 +3974,4 @@ void Draw_Steps_Menu() {
   }
 #endif
 
-#endif // DWIN_CREALITY_LCD_ENHANCED
+#endif // DWIN_LCD_PROUI
