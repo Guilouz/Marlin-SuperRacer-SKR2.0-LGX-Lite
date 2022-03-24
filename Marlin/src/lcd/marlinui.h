@@ -367,15 +367,6 @@ public:
   static void set_status(FSTR_P const fstr, const int8_t level=0);
   static void status_printf(const uint8_t level, FSTR_P const fmt, ...);
 
-  #if EITHER(HAS_DISPLAY, DWIN_LCD_PROUI)
-    static void kill_screen(FSTR_P const lcd_error, FSTR_P const lcd_component);
-    #if DISABLED(LIGHTWEIGHT_UI)
-      static void draw_status_message(const bool blink);
-    #endif
-  #else
-    static void kill_screen(FSTR_P const, FSTR_P const) {}
-  #endif
-
   #if HAS_DISPLAY
 
     static void update();
@@ -489,11 +480,16 @@ public:
     #endif
 
     static void draw_kill_screen();
+    static void kill_screen(FSTR_P const lcd_error, FSTR_P const lcd_component);
+    #if DISABLED(LIGHTWEIGHT_UI)
+      static void draw_status_message(const bool blink);
+    #endif
 
   #else // No LCD
 
     static void update() {}
     static void return_to_status() {}
+    static void kill_screen(FSTR_P const, FSTR_P const) {}
 
   #endif
 
@@ -684,7 +680,31 @@ public:
     #endif
 
     static void update_buttons();
-    static bool button_pressed() { return BUTTON_CLICK() || TERN(TOUCH_SCREEN, touch_pressed(), false); }
+
+    #if HAS_ENCODER_NOISE
+      #ifndef ENCODER_SAMPLES
+        #define ENCODER_SAMPLES 10
+      #endif
+
+      /**
+       * Some printers may have issues with EMI noise especially using a motherboard with 3.3V logic levels
+       * it may cause the logical LOW to float into the undefined region and register as a logical HIGH
+       * causing it to errorenously register as if someone clicked the button and in worst case make the printer
+       * unusable in practice.
+       */
+      static bool hw_button_pressed() {
+        LOOP_L_N(s, ENCODER_SAMPLES) {
+          if (!BUTTON_CLICK()) return false;
+          safe_delay(1);
+        }
+        return true;
+      }
+    #else
+      static bool hw_button_pressed() { return BUTTON_CLICK(); }
+    #endif
+
+    static bool button_pressed() { return hw_button_pressed() || TERN0(TOUCH_SCREEN, touch_pressed()); }
+
     #if EITHER(AUTO_BED_LEVELING_UBL, G26_MESH_VALIDATION)
       static void wait_for_release();
     #endif

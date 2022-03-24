@@ -145,7 +145,8 @@ namespace Language_fr {
   LSTR MSG_MOVE_AXIS                      = _UxGT("Déplacer un axe");
   LSTR MSG_BED_LEVELING                   = _UxGT("Régler Niv. lit");
   LSTR MSG_LEVEL_BED                      = _UxGT("Niveau du lit");
-  LSTR MSG_BED_TRAMMING                   = _UxGT("Niveau des coins");
+  LSTR MSG_BED_TRAMMING                   = _UxGT("Tramage du plateau");
+  LSTR MSG_BED_TRAMMING_MANUAL            = _UxGT("Tramage manuel");
   LSTR MSG_BED_TRAMMING_RAISE             = _UxGT("Relever le coin jusqu'à la sonde");
   LSTR MSG_BED_TRAMMING_IN_RANGE          = _UxGT("Coins dans la tolérance. Niveau lit ");
   LSTR MSG_BED_TRAMMING_GOOD_POINTS       = _UxGT("Points corrects: ");
@@ -398,6 +399,7 @@ namespace Language_fr {
   LSTR MSG_CONTRAST                       = _UxGT("Contraste LCD");
   LSTR MSG_BRIGHTNESS                     = _UxGT("Luminosité LCD");
   LSTR MSG_LCD_BKL_TIMEOUT                = _UxGT("Veille LCD (s)");
+  LSTR MSG_BRIGHTNESS_OFF                 = _UxGT("Rétroéclairage Off");
   LSTR MSG_STORE_EEPROM                   = _UxGT("Enregistrer config.");
   LSTR MSG_LOAD_EEPROM                    = _UxGT("Charger config.");
   LSTR MSG_RESTORE_DEFAULTS               = _UxGT("Restaurer défauts");
@@ -424,6 +426,8 @@ namespace Language_fr {
   LSTR MSG_BUTTON_RESET                   = _UxGT("Réinitialiser");
   LSTR MSG_BUTTON_IGNORE                  = _UxGT("Ignorer");
   LSTR MSG_BUTTON_CANCEL                  = _UxGT("Annuler");
+  LSTR MSG_BUTTON_CONFIRM                 = _UxGT("Confirmer");
+  LSTR MSG_BUTTON_CONTINUE                = _UxGT("Continuer");
   LSTR MSG_BUTTON_DONE                    = _UxGT("Terminé");
   LSTR MSG_BUTTON_BACK                    = _UxGT("Retour");
   LSTR MSG_BUTTON_PROCEED                 = _UxGT("Procéder");
@@ -433,6 +437,7 @@ namespace Language_fr {
   LSTR MSG_BUTTON_PAUSE                   = _UxGT("Pause");
   LSTR MSG_BUTTON_RESUME                  = _UxGT("Reprendre");
   LSTR MSG_BUTTON_ADVANCED                = _UxGT("Avancé");
+  LSTR MSG_BUTTON_SAVE                    = _UxGT("Sauver");
   LSTR MSG_PAUSING                        = _UxGT("Mise en pause...");
   LSTR MSG_PAUSE_PRINT                    = _UxGT("Pause impression");
   LSTR MSG_ADVANCED_PAUSE                 = _UxGT("Pause avancée");
