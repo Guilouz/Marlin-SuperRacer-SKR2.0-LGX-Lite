@@ -345,6 +345,14 @@ namespace Language_fr {
   LSTR MSG_PID_BAD_EXTRUDER_NUM           = _UxGT("Echec Autotune! E incorrect");
   LSTR MSG_PID_TEMP_TOO_HIGH              = _UxGT("Echec Autotune! Temp. trop haute");
   LSTR MSG_PID_TIMEOUT                    = _UxGT("Echec Autotune! Opér. expirée");
+  LSTR MSG_MPC_MEASURING_AMBIENT          = _UxGT("Tester la perte de chaleur");
+  LSTR MSG_MPC_AUTOTUNE                   = _UxGT("Autotune MPC");
+  LSTR MSG_MPC_EDIT                       = _UxGT("Editer * MPC");
+  LSTR MSG_MPC_POWER_E                    = _UxGT("Puissance *");
+  LSTR MSG_MPC_BLOCK_HEAT_CAPACITY_E      = _UxGT("Bloc C *");
+  LSTR MSG_SENSOR_RESPONSIVENESS_E        = _UxGT("Résistance capteur *");
+  LSTR MSG_MPC_AMBIENT_XFER_COEFF_E       = _UxGT("Ambient h *");
+  LSTR MSG_MPC_AMBIENT_XFER_COEFF_FAN255_E= _UxGT("Amb. h fan *");
   LSTR MSG_SELECT                         = _UxGT("Sélectionner");
   LSTR MSG_SELECT_E                       = _UxGT("Sélectionner *");
   LSTR MSG_ACC                            = _UxGT("Accélération");
@@ -417,6 +425,7 @@ namespace Language_fr {
   LSTR MSG_CONTRAST                       = _UxGT("Contraste LCD");
   LSTR MSG_BRIGHTNESS                     = _UxGT("Luminosité LCD");
   LSTR MSG_LCD_TIMEOUT_SEC                = _UxGT("Veille LCD (s)");
+  LSTR MSG_SCREEN_TIMEOUT                 = _UxGT("Veille LCD (m)");
   LSTR MSG_BRIGHTNESS_OFF                 = _UxGT("Rétroéclairage Off");
   LSTR MSG_STORE_EEPROM                   = _UxGT("Enregistrer config.");
   LSTR MSG_LOAD_EEPROM                    = _UxGT("Charger config.");
