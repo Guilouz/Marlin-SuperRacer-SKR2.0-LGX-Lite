@@ -66,7 +66,6 @@ default_envs = BIGTREE_SKR_2_F429
 - Support PID Buse & Plateau
 - Support protection thermique contre l'emballement
 - Support S-Curve Acceleration
-- Support de la compensation d'inclinaison du plateau (https://www.thingiverse.com/thing:2563185)
 - Support de l'ajustement Delta Diagonal Rod Trim
 - Support du Multi Volumes (ports microSD et USB fonctionnels)
 - Support G26 - Mesh Validation Pattern
