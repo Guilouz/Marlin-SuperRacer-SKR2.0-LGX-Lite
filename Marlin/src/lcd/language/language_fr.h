@@ -352,7 +352,7 @@ namespace Language_fr {
   LSTR MSG_MPC_BLOCK_HEAT_CAPACITY_E      = _UxGT("Bloc C *");
   LSTR MSG_SENSOR_RESPONSIVENESS_E        = _UxGT("Résistance capteur *");
   LSTR MSG_MPC_AMBIENT_XFER_COEFF_E       = _UxGT("Ambient h *");
-  LSTR MSG_MPC_AMBIENT_XFER_COEFF_FAN255_E= _UxGT("Amb. h fan *");
+  LSTR MSG_MPC_AMBIENT_XFER_COEFF_FAN_E   = _UxGT("Amb. h fan *");
   LSTR MSG_SELECT                         = _UxGT("Sélectionner");
   LSTR MSG_SELECT_E                       = _UxGT("Sélectionner *");
   LSTR MSG_ACC                            = _UxGT("Accélération");
