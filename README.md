@@ -244,6 +244,9 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
 
   - Si ` HEATBLOCK Trianglelab CHC Pro (104NT-4-R025H42G)`, définissez ces valeurs :
     - Dans Configuration.h : `#define TEMP_SENSOR_0 5`
+    - Dans Configuration.h : `#define DEFAULT_Kp 13.9113`
+    - Dans Configuration.h : `#define DEFAULT_Ki 2.1216`
+    - Dans Configuration.h : `#define DEFAULT_Kd 22.8041`
 
   - Si `EXTRUDEUR FLSUN STOCK / BONDTECH BMG (BOWDEN)`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
