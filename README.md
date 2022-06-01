@@ -242,6 +242,9 @@ Ce firmware est configuré pour une carte mère BigTreeTech SKR 2.0 Rev. B avec 
   - Pour changer la langue de Marlin en anglais, définissez cette valeur :
     - Dans Configuration.h : `#define LCD_LANGUAGE en`
 
+  - Si ` HEATBLOCK Trianglelab CHC Pro (104NT-4-R025H42G)`, définissez ces valeurs :
+    - Dans Configuration.h : `#define TEMP_SENSOR_0 5`
+
   - Si `EXTRUDEUR FLSUN STOCK / BONDTECH BMG (BOWDEN)`, définissez ces valeurs :
     - Dans Configuration.h : `#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 80, 415 }`
     - Dans Configuration.h : `#define INVERT_E0_DIR true`
