@@ -173,7 +173,7 @@ default_envs = BIGTREE_SKR_2_F429
 - Nécessite un fer à souder et de l'étain<br />
 - Nécessite du câble 22 AWG (<a href="https://www.amazon.fr/gp/product/B089N4SWC1/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1">Lien</a>)<br />
 - Nécessite un connecteur JST XH 2.54mm 3 pins et une pince à sertir (<a href="https://www.amazon.fr/connecteurs-PEBA-femelle-Adaptateur-Connecteur/dp/B08GR76H3D/?th=1">Lien</a>)<br />
-- Nécessite un anneau de LED (<a href="https://fr.aliexpress.com/item/1005002090765807.html?spm=a2g0s.9042311.0.0.56d46c37lqhfaf">Lien</a>)<br />
+- Nécessite un anneau de LED (<a href="https://fr.aliexpress.com/item/32825718399.html">Lien</a>, ou <a href="https://fr.aliexpress.com/item/32466976963.html">Lien</a>, ou <a href="https://fr.aliexpress.com/item/33032787658.html">Lien</a>)<br />
  </td>
  </tr>
  <tr>
