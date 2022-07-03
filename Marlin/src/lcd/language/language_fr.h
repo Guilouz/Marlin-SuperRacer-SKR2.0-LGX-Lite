@@ -304,7 +304,7 @@ namespace Language_fr {
   LSTR MSG_MOVE_Z                         = _UxGT("Déplacer Z");
   LSTR MSG_MOVE_N                         = _UxGT("Déplacer @");
   LSTR MSG_MOVE_E                         = _UxGT("Déplacer Extruder");
-  LSTR MSG_MOVE_EN                        = _UxGT("Déplacer E*");
+  LSTR MSG_MOVE_EN                        = _UxGT("Déplacer *");
   LSTR MSG_HOTEND_TOO_COLD                = _UxGT("Buse trop froide");
   LSTR MSG_MOVE_N_MM                      = _UxGT("Déplacer %smm");
   LSTR MSG_MOVE_01MM                      = _UxGT("Déplacer 0.1mm");
@@ -595,8 +595,6 @@ namespace Language_fr {
   LSTR MSG_DELTA_CALIBRATE_CENTER         = _UxGT("Calibrer centre");
   LSTR MSG_DELTA_SETTINGS                 = _UxGT("Réglages Delta");
   LSTR MSG_DELTA_AUTO_CALIBRATE           = _UxGT("Calibration Auto");
-  LSTR MSG_DELTA_HEIGHT_CALIBRATE         = _UxGT("Hauteur Delta");
-  LSTR MSG_DELTA_Z_OFFSET_CALIBRATE       = _UxGT("Delta Z sonde");
   LSTR MSG_DELTA_DIAG_ROD                 = _UxGT("Diagonale");
   LSTR MSG_DELTA_HEIGHT                   = _UxGT("Hauteur");
   LSTR MSG_DELTA_RADIUS                   = _UxGT("Rayon");

@@ -735,9 +735,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 142.3687
-  #define DEFAULT_bedKi 27.3891
-  #define DEFAULT_bedKd 493.3549
+  #define DEFAULT_bedKp 87.5094
+  #define DEFAULT_bedKi 16.8303
+  #define DEFAULT_bedKd 303.3368
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -864,6 +864,13 @@
   #define POLARGRAPH_MAX_BELT_LEN 1035.0
   #define POLAR_SEGMENTS_PER_SECOND 5
 #endif
+
+// Enable for an articulated robot (robot arm). Joints are directly mapped to axes (no kinematics).
+//#define ARTICULATED_ROBOT_ARM
+
+// For a hot wire cutter with parallel horizontal axes (X, I) where the heights of the two wire
+// ends are controlled by parallel axes (Y, J). Joints are directly mapped to axes (no kinematics).
+//#define FOAMCUTTER_XYUV
 
 //===========================================================================
 //============================== Delta Settings =============================
